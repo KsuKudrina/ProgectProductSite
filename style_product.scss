@@ -180,8 +180,26 @@
 
 .imgCarusel {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: #f7f7f7;
+
+    &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 47px;
+        height: 47px;
+        background-color: rgba(42, 42, 42, 0.14);
+
+        &-left {
+            fill: #ffffff;
+        }
+
+        &-right {
+            fill: #ffffff;
+        }
+    }
 
 }
 
@@ -238,6 +256,14 @@
         line-height: 24px;
         font-weight: 400;
         color: #bcbcbc;
+
+        &-item:hover {
+            color: $colorSite;
+        }
+
+        &-sizeCheck:hover {
+            color: $colorSite;
+        }
 
         &-sizeCheck {
             display: flex;
