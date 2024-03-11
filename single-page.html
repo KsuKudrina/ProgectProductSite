@@ -59,7 +59,7 @@
         <nav class="nav">
             <div class="menu-container center">
                 <ul class="menu">
-                    <li class="menu-list"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-list"><a href="index.html" class="menu-link">Home</a></li>
                     <li class="menu-list"><a href="#" class="menu-link">Man</a>
                         <div class="menu-box">
                             <div class="menu-box-item">
@@ -224,8 +224,10 @@
         <div class="topHead center">
             <h2 class="topHead-heading">NEW ARRIVALS</h2>
             <nav class="topHead-breadCrumbs">
-                <a href="#" class="topHead-link">HOME</a>
-                <a href="#" class="topHead-link">MEN</a>
+                <a href="index.html" class="topHead-link">HOME</a>
+                <span class="topHead-link">/</span>
+                <a href="product.html" class="topHead-link">MEN</a>
+                <span class="topHead-link">/</span>
                 <a href="#" class="topHead-link-colorlink">NEW ARRIVALS</a>
             </nav>
         </div>
@@ -265,7 +267,7 @@
                     </div>
                 </div>
                 <div class="parameters-filter">
-                    <details class="parameters-details">
+                    <details class="parameters-details parameters-pos1">
                         <summary class="parameters-summary"><span class="parameters-summary-heading">CHOOSE COLOR</span>
                         </summary>
                         <div class="parameters-box">
@@ -273,9 +275,17 @@
                                 <span class="parameters-box-item"><svg xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="12px"
                                         viewBox="0 0 12 12">
-                                        <path fill-rule="evenodd" fill="#ef5b70"
+                                        <path fill-rule="evenodd" fill="red"
                                             d="M1.0,1.0 C1.0,1.0 13.0,1.0 13.0,1.0 C13.0,1.0 13.0,13.0 13.0,13.0 C13.0,13.0 1.0,13.0 1.0,13.0 C1.0,13.0 1.0,1.0 1.0,1.0 Z" />
                                     </svg> Red</span>
+                            </div>
+                            <div class="parameters-box-colorBox">
+                                <span class="parameters-box-item"><svg xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="12px"
+                                        viewBox="0 0 12 12">
+                                        <path fill-rule="evenodd" fill="black"
+                                            d="M1.0,1.0 C1.0,1.0 13.0,1.0 13.0,1.0 C13.0,1.0 13.0,13.0 13.0,13.0 C13.0,13.0 1.0,13.0 1.0,13.0 C1.0,13.0 1.0,1.0 1.0,1.0 Z" />
+                                    </svg> Black</span>
                             </div>
                             <div class="parameters-box-colorBox">
                                 <span class="parameters-box-item"><svg xmlns="http://www.w3.org/2000/svg"
@@ -285,15 +295,27 @@
                                             d="M1.0,1.0 C1.0,1.0 13.0,1.0 13.0,1.0 C13.0,1.0 13.0,13.0 13.0,13.0 C13.0,13.0 1.0,13.0 1.0,13.0 C1.0,13.0 1.0,1.0 1.0,1.0 Z" />
                                     </svg> Green</span>
                             </div>
+                            <div class="parameters-box-colorBox">
+                                <span class="parameters-box-item"><svg xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="12px"
+                                        viewBox="0 0 12 12">
+                                        <path fill-rule="evenodd" fill="blue"
+                                            d="M1.0,1.0 C1.0,1.0 13.0,1.0 13.0,1.0 C13.0,1.0 13.0,13.0 13.0,13.0 C13.0,13.0 1.0,13.0 1.0,13.0 C1.0,13.0 1.0,1.0 1.0,1.0 Z" />
+                                    </svg> Blue</span>
+                            </div>
                         </div>
                     </details>
-                    <details class="parameters-details">
+                    <details class="parameters-details parameters-pos2">
                         <summary class="parameters-summary"><span class="parameters-summary-heading">CHOOSE SIZE</span>
                         </summary>
                         <div class="parameters-box">
                             <div class="parameters-box-sizeCheck">
                                 <input id="sort-item-check1" type="checkbox">
-                                <label for="sort-item-check1">M</label>
+                                <label for="sort-item-check1">L</label>
+                            </div>
+                            <div class="parameters-box-sizeCheck">
+                                <input id="sort-item-check2" type="checkbox">
+                                <label for="sort-item-check2">M</label>
                             </div>
                             <div class="parameters-box-sizeCheck">
                                 <input id="sort-item-check3" type="checkbox">
@@ -303,9 +325,10 @@
                                 <input id="sort-item-check4" type="checkbox">
                                 <label for="sort-item-check4">XS</label>
                             </div>
+
                         </div>
                     </details>
-                    <details class="parameters-details">
+                    <details class="parameters-details parameters-pos3">
                         <summary class="parameters-summary"><span class="parameters-summary-heading">QUANTITY</span>
                         </summary>
                         <input class="parameters-box-input" type="number" min="1">

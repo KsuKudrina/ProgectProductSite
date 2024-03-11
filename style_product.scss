@@ -1,6 +1,9 @@
 @import 'vars';
 @import 'mixins';
 
+.right {
+    margin-left: 283px;
+}
 
 .topHead {
     background: rgb(241, 228, 230);
@@ -39,6 +42,11 @@
 
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
 
 .filter-sort {
     height: 132px;
@@ -223,10 +231,27 @@
     }
 
     &-filter {
-        padding-top: 12px;
+        padding-top: 30px;
         display: flex;
-        gap: 20px;
-        // gap: 50px;
+        position: relative;
+    }
+
+    &-pos1 {
+        position: absolute;
+        top: 10px;
+        left: -266px;
+    }
+
+    &-pos2 {
+        position: absolute;
+        top: 10px;
+        left: -76px;
+    }
+
+    &-pos3 {
+        position: absolute;
+        top: 10px;
+        left: 110px;
     }
 
     &-details {
@@ -251,6 +276,7 @@
         align-items: center;
         justify-content: space-between;
         border: 1px solid #eaeaea;
+        background-color: #fff;
         padding: 7px;
         font-size: 13px;
         line-height: 24px;
@@ -283,8 +309,6 @@
             padding: 7px;
             width: 140px;
         }
-
-
     }
 
 
@@ -319,7 +343,7 @@
     // padding-top: 100px;
     // padding-bottom: 200px;
     width: 642px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     border-bottom: 1px solid #eaeaea;
 
 
