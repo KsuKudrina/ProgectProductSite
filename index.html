@@ -31,8 +31,20 @@
 
                 <a class="header-left-textlogo" href="index.html">BRAN<span class="header-left-colorText">D</span></a>
             </div>
-            <div class="header-search">
-                <div class="button header-search__button button_bdr-left">Browse</div>
+            <nav class="header-search">
+                <details class="header-details">
+                    <summary class="button header-search__button button_bdr-left">Browse
+                        <i class="down header__down">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                            </svg>
+                        </i>
+                    </summary>
+                    <div class="header-box">
+                    </div>
+                </details>
+
                 <div class="header-search-cont">
                     <input class="header-search-text" type="text" placeholder="Search for Item...">
                     <div class="button header-search-cont__button">
@@ -44,13 +56,23 @@
                         </i>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
         <div class="header-right">
             <img src="img/logo/basket.svg" alt="basket">
-            <div class="button header-right__button button_bdr">
-                My Account
-            </div>
+            <details>
+                <summary class="button header-right__button button_bdr">My Account
+                    <i class="down header-right__down">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+                        </svg>
+                    </i>
+                </summary>
+                <div class="header-box">
+                    <a href="checkout.html">checkout</a>
+                </div>
+            </details>
         </div>
     </header>
     <nav class="nav">
@@ -543,13 +565,13 @@
                     <a class="header-left-textlogo" href="index.html">BRAN<span
                             class="header-left-colortext">D</span></a>
                 </div>
-                <div class="bottom-description">
+                <article class="bottom-description">
                     Objectively transition extensive data rather than cross functional solutions. Monotonectally
                     syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded
                     array of processes and cross-unit partnerships.
                     Efficiently plagiarize 24/365 action items and focused infomediaries.
                     Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
-                </div>
+                </article>
             </div>
             <div class="bottom-right">
                 <div class="bottom-right-box">
@@ -595,7 +617,7 @@
     </section>
     <footer class="footer">
         <p class="footer-text">&copy;&nbsp;2021 Brand All Rights Reserved.</p>
-        <div class="footer-icons">
+        <nav class="footer-icons">
             <div class="footer-icons-icon">
                 <svg width="8.070343" height="14.720001" viewBox="0 0 8.07034 14.72" fill="none"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -639,7 +661,7 @@
                         fill="#b2b2b2" fill-opacity="1.000000" fill-rule="nonzero" />
                 </svg>
             </div>
-        </div>
+        </nav>
     </footer>
 </body>
 

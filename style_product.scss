@@ -20,26 +20,43 @@
         font-weight: 900;
         text-transform: uppercase;
     }
+}
 
+.breadсrumbs {
+    &__ul {
+        list-style-type: none;
+        display: flex;
+    }
 
-    &-link {
+    &__li:not(:last-child)::after {
+        content: '/';
+        padding-left: 8px;
+        padding-right: 8px;
         font-style: normal;
         color: #636363;
         font-size: 14px;
         font-weight: 300;
         line-height: 20px;
 
-        &-colorlink {
-            color: $colorSite;
-            font-weight: 700;
-        }
     }
 
-    &-link:hover {
+    &__link {
+        font-style: normal;
+        color: #636363;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 20px;
+
+    }
+
+    &__li:last-child .breadсrumbs__link {
+        color: $colorSite;
+        font-weight: 700;
+    }
+
+    &__link:hover {
         color: $colorSite;
     }
-
-
 }
 
 .container {
@@ -553,5 +570,124 @@
         font-weight: 300;
         letter-spacing: 0.025em;
         color: #fbfbfb;
+    }
+}
+
+.registration {
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.regcontainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b3b2b2;
+
+    &-name {
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $colorTextSite;
+    }
+
+    &-box {
+        display: flex;
+
+    }
+
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 570px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &-heading {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &-title {
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $colorTextSite;
+    }
+
+    &-subtitle {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #b3b2b2;
+    }
+
+    &-radiobox {
+        margin-right: 0.4rem;
+    }
+
+    &-radiobox[type='radio'] {
+        accent-color: #232323;
+    }
+
+    &-forma {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &-data {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+    }
+
+    &-label {
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorTextSite;
+    }
+
+    &-input {
+        border: 1px solid #eaeaea;
+        padding: 7px;
+        width: 390px;
+    }
+
+    &-required {
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #ff0d0d;
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__button {
+        border: 1px solid #eaeaea;
+        width: 180px;
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #4a4a4a;
+    }
+
+    &-forgot {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $colorTextSite;
     }
 }
