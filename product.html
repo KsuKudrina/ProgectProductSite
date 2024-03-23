@@ -10,16 +10,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_product.css">
 </head>
 
 <body>
     <header class="header center">
         <div class="header-left">
-            <div class="header-left-logo">
+            <div class="header-left__logo">
                 <a href="index.html" class="header-logotype"><svg width="44.000000" height="38.000000"
                         viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -35,12 +33,11 @@
                             fill-opacity="1.000000" />
                     </svg>
                 </a>
-
                 <a class="header-left-textlogo" href="index.html">BRAN<span class="header-left-colorText">D</span></a>
             </div>
             <nav class="header-search">
-                <details class="header-details">
-                    <summary class="button header-search__button button_bdr-left">Browse
+                <details class="header-search-btn">
+                    <summary class="button header-search__button button_bdr-left button_hover-shadow">Browse
                         <i class="down header__down">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                 <path
@@ -48,27 +45,102 @@
                             </svg>
                         </i>
                     </summary>
-                    <div class="header-box">
+                    <div class="box header-search-btn__box">
+                        <div class="header-item">
+                            <h3 class="header__heading">Men</h3>
+                            <a href="#" class="header-itemlink">Dresses</a>
+                            <a href="#" class="header-itemlink">Tops</a>
+                            <a href="#" class="header-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="header-itemlink">Jackets/Coats</a>
+                            <a href="#" class="header-itemlink">Blazers</a>
+                            <a href="#" class="header-itemlink">Denim</a>
+                            <a href="#" class="header-itemlink">Leggings/Pants</a>
+                            <a href="#" class="header-itemlink">Skirts/Shorts</a>
+                            <a href="#" class="header-itemlink">Accessories</a>
+                        </div>
                     </div>
                 </details>
-
                 <div class="header-search-cont">
                     <input class="header-search-text" type="text" placeholder="Search for Item...">
-                    <div class="button header-search-cont__button">
-                        <i class="fa-solid fa-magnifying-glass" style="color: #a4a4a4;">
+                    <a href="#" class="button header-search-cont__button">
+                        <i class="fa-solid fa-magnifying-glass" fill="#a4a4a4">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 512 512">
                                 <path fill="#909398"
                                     d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
                             </svg>
                         </i>
-                    </div>
+                    </a>
                 </div>
             </nav>
         </div>
         <div class="header-right">
-            <img src="img/logo/basket.svg" alt="basket">
-            <details>
-                <summary class="button header-right__button button_bdr">My Account
+            <details class="basket">
+                <summary class="button basket__button">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px"
+                        height="32px" viewBox="0 0 36 32">
+                        <path fill-rule="evenodd" fill="#222222"
+                            d="M3.1835938,4.3639603 C3.1835938,4.3639603 6.57666,4.3639603 6.57666,4.3639603 C6.57666,4.3639603 11.409912,21.81926 11.409912,21.81926 C11.547852,22.331264 12.021362,22.685959 12.553955,22.685959 C12.553955,22.685959 27.40857,22.685959 27.40857,22.685959 C27.881958,22.685959 28.296265,22.410057 28.49353,21.976841 C28.49353,21.976841 33.89868,9.564976 33.89868,9.564976 C34.05652,9.190784 34.01709,8.777065 33.80017,8.442135 C33.583008,8.107204 33.208252,7.910095 32.81372,7.910095 C32.81372,7.910095 16.400757,7.910095 16.400757,7.910095 C15.749756,7.910095 15.217163,8.442135 15.217163,9.092228 C15.217163,9.742321 15.749756,10.274361 16.400757,10.274361 C16.400757,10.274361 30.998901,10.274361 30.998901,10.274361 C30.998901,10.274361 26.619507,20.32196 26.619507,20.32196 C26.619507,20.32196 13.44165,20.32196 13.44165,20.32196 C13.44165,20.32196 8.6085205,2.866665 8.6085205,2.866665 C8.470581,2.3543892 7.9970703,1.9996948 7.4643555,1.9996948 C7.4643555,1.9996948 3.1835938,1.9996948 3.1835938,1.9996948 C2.5325928,1.9996948 2.0,2.5317345 2.0,3.1818275 C2.0,3.8319206 2.5325928,4.3639603 3.1835938,4.3639603 ZM11.429443,30.999886 C12.909058,30.999886 14.112427,29.798256 14.112427,28.320457 C14.112427,26.842926 12.909058,25.641293 11.429443,25.641293 C9.949951,25.641293 8.746582,26.842926 8.746582,28.320457 C8.746582,29.797989 9.949951,30.999886 11.429443,30.999886 ZM28.197632,30.999886 C28.256836,30.999886 28.335815,30.999886 28.39502,30.999886 C29.105103,30.940865 29.756104,30.625694 30.229614,30.07389 C30.703003,29.542122 30.920044,28.852493 30.880493,28.123611 C30.781982,26.66558 29.499756,25.542736 28.020142,25.641293 C26.540527,25.739582 25.435791,27.040031 25.534546,28.497803 C25.633179,29.896545 26.796997,30.999886 28.197632,30.999886 Z" />
+                    </svg>
+                </summary>
+                <div class="box basket__box">
+                    <div class="basket-product">
+                        <div class="basket-item">
+                            <a href="product.html" class="basket-pos">
+                                <img src="img/basket/men.png" alt="product men">
+                                <div class="basket-content">
+                                    <p class="basket-headline">Rebox Zane</p>
+                                    <div class="basket-star">
+                                        <i class="fa fa-star f123"></i>
+                                        <i class="fa fa-star f123"></i>
+                                        <i class="fa fa-star f123"></i>
+                                        <i class="fa fa-star f123"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                    </div>
+                                    <p class="basket-cost">
+                                        1 x $250
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="basket-item">
+                            <a href="product.html" class="basket-pos">
+                                <img src="img/basket/women.png" alt="product men">
+                                <div class="basket-content">
+                                    <p class="basket-headline">Rebox Zane</p>
+                                    <div class="basket-star">
+                                        <i class="fa fa-star f123"></i>
+                                        <i class="fa fa-star f123"></i>
+                                        <i class="fa fa-star f123"></i>
+                                        <i class="fa fa-star f123"></i>
+                                        <i class="fa fa-star-half-o"></i>
+                                    </div>
+                                    <p class="basket-cost">
+                                        1 x $250
+                                    </p>
+                                </div>
+                            </a>
+                            <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="basket-total">
+                            <p class="basket-totaltext">TOTAL</p>
+                            <p class="basket-totaltext">$500.00</p>
+                        </div>
+                    </div>
+                    <div class="basket-checkout">
+                        <div class="link-check">
+                            <a href="checkout.html"
+                                class="button link-check__button button_bg-none button_hoverbdr">Checkout</a>
+                            <a href="shopping_cart.html"
+                                class="button link-check__button button_bg-none button_hoverbdr">Go
+                                to cart</a>
+                        </div>
+
+                    </div>
+                </div>
+            </details>
+            <details class="header-btn">
+                <summary class="button header-right__button button_bdr button_hover">My Account
                     <i class="down header-right__down">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                             <path
@@ -76,170 +148,172 @@
                         </svg>
                     </i>
                 </summary>
-                <div class="header-box">
+                <div class="box header-btn__box">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit reiciendis dolore consequuntur
+                    similique consequatur blanditiis?
                 </div>
             </details>
         </div>
     </header>
-    <nav class="nav">
+    <nav class="nav-cont">
         <div class="menu-container center">
             <ul class="menu">
                 <li class="menu-list"><a href="index.html" class="menu-link">Home</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Man</a>
-                    <div class="menu-box">
-                        <div class="menu-box-item">
-                            <h3 class="menu-heading">Men</h3>
-                            <a href="#" class="menu-box-itemlink">Dresses</a>
-                            <a href="#" class="menu-box-itemlink">Tops</a>
-                            <a href="#" class="menu-box-itemlink">Sweaters/Knits</a>
-                            <a href="#" class="menu-box-itemlink">Jackets/Coats</a>
-                            <a href="#" class="menu-box-itemlink">Blazers</a>
-                            <a href="#" class="menu-box-itemlink">Denim</a>
-                            <a href="#" class="menu-box-itemlink">Leggings/Pants</a>
-                            <a href="#" class="menu-box-itemlink">Skirts/Shorts</a>
-                            <a href="#" class="menu-box-itemlink">Accessories</a>
+                <li class="menu-list"><a href="product.html" class="menu-link">Man</a>
+                    <div class="menu__box">
+                        <div class="menu-item">
+                            <h3 class="menu__heading">Men</h3>
+                            <a href="#" class="menu-itemlink">Dresses</a>
+                            <a href="#" class="menu-itemlink">Tops</a>
+                            <a href="#" class="menu-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="menu-itemlink">Jackets/Coats</a>
+                            <a href="#" class="menu-itemlink">Blazers</a>
+                            <a href="#" class="menu-itemlink">Denim</a>
+                            <a href="#" class="menu-itemlink">Leggings/Pants</a>
+                            <a href="#" class="menu-itemlink">Skirts/Shorts</a>
+                            <a href="#" class="menu-itemlink">Accessories</a>
                         </div>
-                        <div class="menu-box-item">
-                            <h3 class="menu-heading">Men</h3>
-                            <a href="#" class="menu-box-itemlink">Dresses</a>
-                            <a href="#" class="menu-box-itemlink">Tops</a>
-                            <a href="#" class="menu-box-itemlink">Sweaters/Knits</a>
-                            <a href="#" class="menu-box-itemlink">Jackets/Coats</a>
-                            <a href="#" class="menu-box-itemlink">Blazers</a>
-                            <a href="#" class="menu-box-itemlink">Denim</a>
-                            <a href="#" class="menu-box-itemlink">Leggings/Pants</a>
-                            <a href="#" class="menu-box-itemlink">Skirts/Shorts</a>
-                            <a href="#" class="menu-box-itemlink">Accessories</a>
+                        <div class="menu-item">
+                            <h3 class="menu__heading">Men</h3>
+                            <a href="#" class="menu-itemlink">Dresses</a>
+                            <a href="#" class="menu-itemlink">Tops</a>
+                            <a href="#" class="menu-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="menu-itemlink">Jackets/Coats</a>
+                            <a href="#" class="menu-itemlink">Blazers</a>
+                            <a href="#" class="menu-itemlink">Denim</a>
+                            <a href="#" class="menu-itemlink">Leggings/Pants</a>
+                            <a href="#" class="menu-itemlink">Skirts/Shorts</a>
+                            <a href="#" class="menu-itemlink">Accessories</a>
                         </div>
-                        <div class="menu-box-item">
-                            <h3 class="menu-heading">Men</h3>
-                            <a href="#" class="menu-box-itemlink">Dresses</a>
-                            <a href="#" class="menu-box-itemlink">Tops</a>
-                            <a href="#" class="menu-box-itemlink">Sweaters/Knits</a>
-                            <a href="#" class="menu-box-itemlink">Jackets/Coats</a>
+                        <div class="menu-item">
+                            <h3 class="menu__heading">Men</h3>
+                            <a href="#" class="menu-itemlink">Dresses</a>
+                            <a href="#" class="menu-itemlink">Tops</a>
+                            <a href="#" class="menu-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="menu-itemlink">Jackets/Coats</a>
                             <img src="img/mega-menu.png" alt="">
                         </div>
                     </div>
                 </li>
-                <li class="menu-list"><a href="#" class="menu-link">Women</a>
-                    <div class="menu-box">
-                        <div class="menu-box-item">
-                            <h3 class="menu-heading">Women</h3>
-                            <a href="#" class="menu-box-itemlink">Dresses</a>
-                            <a href="#" class="menu-box-itemlink">Tops</a>
-                            <a href="#" class="menu-box-itemlink">Sweaters/Knits</a>
-                            <a href="#" class="menu-box-itemlink">Jackets/Coats</a>
-                            <a href="#" class="menu-box-itemlink">Blazers</a>
-                            <a href="#" class="menu-box-itemlink">Denim</a>
-                            <a href="#" class="menu-box-itemlink">Leggings/Pants</a>
-                            <a href="#" class="menu-box-itemlink">Skirts/Shorts</a>
-                            <a href="#" class="menu-box-itemlink">Accessories</a>
+                <li class="menu-list"><a href="product.html" class="menu-link">Women</a>
+                    <div class="menu__box">
+                        <div class="menu-item">
+                            <h3 class="menu__heading">Women</h3>
+                            <a href="#" class="menu-itemlink">Dresses</a>
+                            <a href="#" class="menu-itemlink">Tops</a>
+                            <a href="#" class="menu-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="menu-itemlink">Jackets/Coats</a>
+                            <a href="#" class="menu-itemlink">Blazers</a>
+                            <a href="#" class="menu-itemlink">Denim</a>
+                            <a href="#" class="menu-itemlink">Leggings/Pants</a>
+                            <a href="#" class="menu-itemlink">Skirts/Shorts</a>
+                            <a href="#" class="menu-itemlink">Accessories</a>
                         </div>
-                        <div class="menu-box-item">
-                            <h3 class="menu-heading">women</h3>
-                            <a href="#" class="menu-box-itemlink">Dresses</a>
-                            <a href="#" class="menu-box-itemlink">Tops</a>
-                            <a href="#" class="menu-box-itemlink">Sweaters/Knits</a>
-                            <a href="#" class="menu-box-itemlink">Jackets/Coats</a>
-                            <a href="#" class="menu-box-itemlink">Blazers</a>
-                            <a href="#" class="menu-box-itemlink">Denim</a>
-                            <a href="#" class="menu-box-itemlink">Leggings/Pants</a>
-                            <a href="#" class="menu-box-itemlink">Skirts/Shorts</a>
-                            <a href="#" class="menu-box-itemlink">Accessories</a>
+                        <div class="menu-item">
+                            <h3 class="menu__heading">women</h3>
+                            <a href="#" class="menu-itemlink">Dresses</a>
+                            <a href="#" class="menu-itemlink">Tops</a>
+                            <a href="#" class="menu-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="menu-itemlink">Jackets/Coats</a>
+                            <a href="#" class="menu-itemlink">Blazers</a>
+                            <a href="#" class="menu-itemlink">Denim</a>
+                            <a href="#" class="menu-itemlink">Leggings/Pants</a>
+                            <a href="#" class="menu-itemlink">Skirts/Shorts</a>
+                            <a href="#" class="menu-itemlink">Accessories</a>
                         </div>
-                        <div class="menu-box-item">
-                            <h3 class="menu-heading">Women</h3>
+                        <div class="menu-item">
+                            <h3 class="menu__heading">Women</h3>
                             <a href="#" class="menu-box-itemlink">Dresses</a>
-                            <a href="#" class="menu-box-itemlink">Tops</a>
-                            <a href="#" class="menu-box-itemlink">Sweaters/Knits</a>
-                            <a href="#" class="menu-box-itemlink">Jackets/Coats</a>
-                            <a href="#" class="menu-box-itemlink">Blazers</a>
-                            <a href="#" class="menu-box-itemlink">Denim</a>
-                            <a href="#" class="menu-box-itemlink">Leggings/Pants</a>
-                            <a href="#" class="menu-box-itemlink">Skirts/Shorts</a>
-                            <a href="#" class="menu-box-itemlink">Accessories</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu-list"><a href="#" class="menu-link">Kids</a></li>
-                <li class="menu-list"><a href="#" class="menu-link">Accoseriese</a></li>
-                <li class="menu-list last"><a href="#" class="menu-link">Featured</a>
-                    <div class="menu-box">
-                        <div class="menu-box-item">
-                            <h3 class="menu-heading">Men</h3>
-                            <a href="#" class="menu-box-itemlink">Dresses</a>
-                            <a href="#" class="menu-box-itemlink">Tops</a>
-                            <a href="#" class="menu-box-itemlink">Sweaters/Knits</a>
-                            <a href="#" class="menu-box-itemlink">Jackets/Coats</a>
-                            <a href="#" class="menu-box-itemlink">Blazers</a>
-                            <a href="#" class="menu-box-itemlink">Denim</a>
-                            <a href="#" class="menu-box-itemlink">Leggings/Pants</a>
-                            <a href="#" class="menu-box-itemlink">Skirts/Shorts</a>
-                            <a href="#" class="menu-box-itemlink">Accessories</a>
-                        </div>
-                        <div class="menu-box-item">
-                            <h3 class="menu-heading">Men</h3>
-                            <a href="#" class="menu-box-itemlink">Dresses</a>
-                            <a href="#" class="menu-box-itemlink">Tops</a>
-                            <a href="#" class="menu-box-itemlink">Sweaters/Knits</a>
-                            <a href="#" class="menu-box-itemlink">Jackets/Coats</a>
-                            <a href="#" class="menu-box-itemlink">Blazers</a>
-                            <a href="#" class="menu-box-itemlink">Denim</a>
-                            <a href="#" class="menu-box-itemlink">Leggings/Pants</a>
-                            <a href="#" class="menu-box-itemlink">Skirts/Shorts</a>
-                            <a href="#" class="menu-box-itemlink">Accessories</a>
-                        </div>
-                        <div class="menu-box-item">
-                            <h3 class="menu-heading">Men</h3>
-                            <a href="#" class="menu-box-itemlink">Dresses</a>
-                            <a href="#" class="menu-box-itemlink">Tops</a>
-                            <a href="#" class="menu-box-itemlink">Sweaters/Knits</a>
-                            <a href="#" class="menu-box-itemlink">Jackets/Coats</a>
-                            <a href="#" class="menu-box-itemlink">Blazers</a>
-                            <a href="#" class="menu-box-itemlink">Denim</a>
-                            <a href="#" class="menu-box-itemlink">Leggings/Pants</a>
-                            <a href="#" class="menu-box-itemlink">Skirts/Shorts</a>
-                            <a href="#" class="menu-box-itemlink">Accessories</a>
+                            <a href="#" class="menu-itemlink">Tops</a>
+                            <a href="#" class="menu-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="menu-itemlink">Jackets/Coats</a>
+                            <a href="#" class="menu-itemlink">Blazers</a>
+                            <a href="#" class="menu-itemlink">Denim</a>
+                            <a href="#" class="menu-itemlink">Leggings/Pants</a>
+                            <a href="#" class="menu-itemlink">Skirts/Shorts</a>
+                            <a href="#" class="menu-itemlink">Accessories</a>
                         </div>
                     </div>
                 </li>
-                <li class="menu-list last"><a href="#" class="menu-link">Hot Deals</a>
-                    <div class="menu-box">
-                        <div class="menu-box-item">
-                            <h3 class="menu-heading">Men</h3>
-                            <a href="#" class="menu-box-itemlink">Dresses</a>
-                            <a href="#" class="menu-box-itemlink">Tops</a>
-                            <a href="#" class="menu-box-itemlink">Sweaters/Knits</a>
-                            <a href="#" class="menu-box-itemlink">Jackets/Coats</a>
-                            <a href="#" class="menu-box-itemlink">Blazers</a>
-                            <a href="#" class="menu-box-itemlink">Denim</a>
-                            <a href="#" class="menu-box-itemlink">Leggings/Pants</a>
-                            <a href="#" class="menu-box-itemlink">Skirts/Shorts</a>
-                            <a href="#" class="menu-box-itemlink">Accessories</a>
+                <li class="menu-list"><a href="product.html" class="menu-link">Kids</a></li>
+                <li class="menu-list"><a href="product.html" class="menu-link">Accoseriese</a></li>
+                <li class="menu-list last"><a href="product.html" class="menu-link">Featured</a>
+                    <div class="menu__box">
+                        <div class="menu-item">
+                            <h3 class="menu__heading">Men</h3>
+                            <a href="#" class="menu-itemlink">Dresses</a>
+                            <a href="#" class="menu-itemlink">Tops</a>
+                            <a href="#" class="menu-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="menu-itemlink">Jackets/Coats</a>
+                            <a href="#" class="menu-itemlink">Blazers</a>
+                            <a href="#" class="menu-itemlink">Denim</a>
+                            <a href="#" class="menu-itemlink">Leggings/Pants</a>
+                            <a href="#" class="menu-itemlink">Skirts/Shorts</a>
+                            <a href="#" class="menu-itemlink">Accessories</a>
                         </div>
-                        <div class="menu-box-item">
-                            <h3 class="menu-heading">Men</h3>
-                            <a href="#" class="menu-box-itemlink">Dresses</a>
-                            <a href="#" class="menu-box-itemlink">Tops</a>
-                            <a href="#" class="menu-box-itemlink">Sweaters/Knits</a>
-                            <a href="#" class="menu-box-itemlink">Jackets/Coats</a>
-                            <a href="#" class="menu-box-itemlink">Blazers</a>
-                            <a href="#" class="menu-box-itemlink">Denim</a>
-                            <a href="#" class="menu-box-itemlink">Leggings/Pants</a>
-                            <a href="#" class="menu-box-itemlink">Skirts/Shorts</a>
-                            <a href="#" class="menu-box-itemlink">Accessories</a>
+                        <div class="menu-item">
+                            <h3 class="menu__heading">Men</h3>
+                            <a href="#" class="menu-itemlink">Dresses</a>
+                            <a href="#" class="menu-itemlink">Tops</a>
+                            <a href="#" class="menu-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="menu-itemlink">Jackets/Coats</a>
+                            <a href="#" class="menu-itemlink">Blazers</a>
+                            <a href="#" class="menu-itemlink">Denim</a>
+                            <a href="#" class="menu-itemlink">Leggings/Pants</a>
+                            <a href="#" class="menu-itemlink">Skirts/Shorts</a>
+                            <a href="#" class="menu-itemlink">Accessories</a>
                         </div>
-                        <div class="menu-box-item">
-                            <h3 class="menu-heading">Men</h3>
-                            <a href="#" class="menu-box-itemlink">Dresses</a>
-                            <a href="#" class="menu-box-itemlink">Tops</a>
-                            <a href="#" class="menu-box-itemlink">Sweaters/Knits</a>
-                            <a href="#" class="menu-box-itemlink">Jackets/Coats</a>
-                            <a href="#" class="menu-box-itemlink">Blazers</a>
-                            <a href="#" class="menu-box-itemlink">Denim</a>
-                            <a href="#" class="menu-box-itemlink">Leggings/Pants</a>
-                            <a href="#" class="menu-box-itemlink">Skirts/Shorts</a>
-                            <a href="#" class="menu-box-itemlink">Accessories</a>
+                        <div class="menu-item">
+                            <h3 class="menu__heading">Men</h3>
+                            <a href="#" class="menu-itemlink">Dresses</a>
+                            <a href="#" class="menu-itemlink">Tops</a>
+                            <a href="#" class="menu-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="menu-itemlink">Jackets/Coats</a>
+                            <a href="#" class="menu-itemlink">Blazers</a>
+                            <a href="#" class="menu-itemlink">Denim</a>
+                            <a href="#" class="menu-itemlink">Leggings/Pants</a>
+                            <a href="#" class="menu-itemlink">Skirts/Shorts</a>
+                            <a href="#" class="menu-itemlink">Accessories</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-list last"><a href="product.html" class="menu-link">Hot Deals</a>
+                    <div class="menu__box">
+                        <div class="menu-item">
+                            <h3 class="menu__heading">Men</h3>
+                            <a href="#" class="menu-itemlink">Dresses</a>
+                            <a href="#" class="menu-itemlink">Tops</a>
+                            <a href="#" class="menu-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="menu-itemlink">Jackets/Coats</a>
+                            <a href="#" class="menu-itemlink">Blazers</a>
+                            <a href="#" class="menu-itemlink">Denim</a>
+                            <a href="#" class="menu-itemlink">Leggings/Pants</a>
+                            <a href="#" class="menu-itemlink">Skirts/Shorts</a>
+                            <a href="#" class="menu-itemlink">Accessories</a>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu__heading">Men</h3>
+                            <a href="#" class="menu-itemlink">Dresses</a>
+                            <a href="#" class="menu-itemlink">Tops</a>
+                            <a href="#" class="menu-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="menu-itemlink">Jackets/Coats</a>
+                            <a href="#" class="menu-itemlink">Blazers</a>
+                            <a href="#" class="menu-itemlink">Denim</a>
+                            <a href="#" class="menu-itemlink">Leggings/Pants</a>
+                            <a href="#" class="menu-itemlink">Skirts/Shorts</a>
+                            <a href="#" class="menu-itemlink">Accessories</a>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="menu__heading">Men</h3>
+                            <a href="#" class="menu-itemlink">Dresses</a>
+                            <a href="#" class="menu-itemlink">Tops</a>
+                            <a href="#" class="menu-itemlink">Sweaters/Knits</a>
+                            <a href="#" class="menu-itemlink">Jackets/Coats</a>
+                            <a href="#" class="menu-itemlink">Blazers</a>
+                            <a href="#" class="menu-itemlink">Denim</a>
+                            <a href="#" class="menu-itemlink">Leggings/Pants</a>
+                            <a href="#" class="menu-itemlink">Skirts/Shorts</a>
+                            <a href="#" class="menu-itemlink">Accessories</a>
                         </div>
                     </div>
                 </li>
@@ -333,7 +407,7 @@
             </details>
 
             <div class="sort">
-                <details class="sort-details">
+                <details class="sort-details" open>
                     <summary class="sort-summary"><span class="sort-summary-heading">TRENDING NOW</span></summary>
                     <div class="sort-box">
                         <a href="" class="sort-box-link">Bohemian</a>|
@@ -344,7 +418,7 @@
                         <a href="" class="sort-box-link">Bohemian</a>
                     </div>
                 </details>
-                <details class="sort__details">
+                <details class="sort-details" open>
                     <summary class="sort-summary"><span class="sort-summary-heading">SIZE</span></summary>
                     <div class="sort-box">
                         <div class="sort-box-sizeCheck">
@@ -377,10 +451,14 @@
                         </div>
                     </div>
                 </details>
-                <details class="sort-details">
+                <details class="sort-details" open>
                     <summary class="sort-summary"><span class="sort-summary-heading">PRICE</span></summary>
                     <div class="sort-box">
-                        <input type="range" min="$52" max="$400">
+                        <input class="input" type="range" min="$52" max="$400">
+                        <div class="sort-interval">
+                            <p>$52</p>
+                            <p>$400</p>
+                        </div>
                     </div>
                 </details>
             </div>
@@ -388,214 +466,241 @@
         </nav>
         <nav class="sortBy">
             <div class="sortBy-box">
-                <div class="sortBy-sort"><span class="sortBy-sort-text">Sort By</span></div>
-                <details class="sortBy-name">
-                    <summary class="sortBy-summary"><span class="sortBy-summary-name">Name </span>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="12"
-                            fill="#6f6e6e">
-                            <path
-                                d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
-                        </svg>
-                    </summary>
-                </details>
+                <div class="sortBy-sort"><span class="sortBy-sort-text">Sort By</span>
+                </div>
+                <select name class="sortBy-name"><i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <option value="name">Name </option>
+                    <option value="rating">Rating</option>
+                </select>
             </div>
             <div class="sortBy-box">
                 <div class="sortBy-sort"><span class="sortBy-sort-text">Show</span></div>
-                <details class="sortBy-name">
-                    <summary class="sortBy-summary"><span class="sortBy-summary-name">09 </span>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15" height="12"
-                            fill="#6f6e6e">
-                            <path
-                                d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
-                        </svg>
-                    </summary>
-                </details>
+                <select name class="sortBy-name"><i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <option value="9">09 </option>
+                    <option value="12">12</option>
+                    <option value="15">15</option>
+                </select>
             </div>
 
         </nav>
         <section class="product center">
-            <div class="product-box">
-                <div class="product-unit">
-                    <a href="#" class="product-unit-link">
-                        <img class="product-img" src="img/product/men/proguct_pm1.png" alt="product1">
-                        <div class="product-box-content">
-                            <p class="product-box-name">MANGO PEOPLE T-SHIRT</p>
-                            <p class="product-box-price">$ 52.00</p>
+            <div class="product__box">
+                <div class="product__unit">
+                    <a href="single-page.html" class="product__unit-link">
+                        <img class="product__img" src="img/product/men/proguct_pm1.png" alt="product1">
+                        <div class="product__box-content">
+                            <p class="product__box-name">MANGO PEOPLE T-SHIRT</p>
+                            <p class="product__box-price">$ 52.00</p>
                         </div>
                     </a>
-                    <div class="product-but">
-                        <div class="product-addCard">
-                            <a class="button product-but__button" href="#">
+                    <div class="butcard">
+                        <div class="butcard__addCard">
+                            <a class="button butcard__button" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="27px" height="25px" viewBox="0 0 27 25">
                                     <path fill-rule="evenodd" fill="#ffffff"
                                         d="M2.850647,3.793457 C2.850647,3.793457 5.2894897,3.793457 5.2894897,3.793457 C5.2894897,3.793457 8.763306,17.035156 8.763306,17.035156 C8.862488,17.423706 9.202759,17.692627 9.585693,17.692627 C9.585693,17.692627 20.26233,17.692627 20.26233,17.692627 C20.602722,17.692627 20.900452,17.48352 21.042175,17.154785 C21.042175,17.154785 24.927246,7.7391357 24.927246,7.7391357 C25.04065,7.454956 25.01233,7.1411133 24.856262,6.887085 C24.700378,6.6330566 24.43097,6.4835205 24.147339,6.4835205 C24.147339,6.4835205 12.350586,6.4835205 12.350586,6.4835205 C11.882568,6.4835205 11.499817,6.887085 11.499817,7.380371 C11.499817,7.873413 11.882568,8.276978 12.350586,8.276978 C12.350586,8.276978 22.842957,8.276978 22.842957,8.276978 C22.842957,8.276978 19.695312,15.89917 19.695312,15.89917 C19.695312,15.89917 10.223694,15.89917 10.223694,15.89917 C10.223694,15.89917 6.749939,2.6574707 6.749939,2.6574707 C6.650635,2.268921 6.310364,1.9998779 5.9275513,1.9998779 C5.9275513,1.9998779 2.850647,1.9998779 2.850647,1.9998779 C2.3827515,1.9998779 1.999939,2.4034424 1.999939,2.8964844 C1.999939,3.3898926 2.3827515,3.793457 2.850647,3.793457 ZM8.777405,24.0 C9.840881,24.0 10.7057495,23.088135 10.7057495,21.967163 C10.7057495,20.846436 9.840881,19.93457 8.777405,19.93457 C7.7139893,19.93457 6.849121,20.846191 6.849121,21.967163 C6.849121,23.088135 7.7139893,24.0 8.777405,24.0 ZM20.82959,24.0 C20.872131,24.0 20.928772,24.0 20.971313,24.0 C21.481812,23.955078 21.949707,23.716064 22.289917,23.297485 C22.63031,22.89392 22.786255,22.370728 22.757935,21.817871 C22.68695,20.711914 21.765442,19.859863 20.701965,19.93457 C19.63855,20.0094 18.844482,20.995728 18.915344,22.101807 C18.986328,23.162964 19.822876,24.0 20.82959,24.0 Z" />
                                 </svg>
-                                <span class="product-textCard">Add to Cart</span></a>
+                                <span class="butcard__textCard">Add to Cart</span></a>
                         </div>
                     </div>
+                    <a class="butcard-retweet" href="#">
+                        <i class="fa fa-retweet" aria-hidden="true"></i></a>
+                    <a class="butcard-heart" href="#">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i></a>
                 </div>
-                <div class="product-unit">
-                    <a href="#" class="product-unit-link">
-                        <img class="product-img" src="img/product/men/proguct_pm2.png" alt="product2">
-                        <div class="product-box-content">
-                            <p class="product-box-name">MANGO PEOPLE T-SHIRT</p>
-                            <p class="product-box-price">$ 52.00</p>
+
+                <div class="product__unit">
+                    <a href="single-page.html" class="product__unit-link">
+                        <img class="product__img" src="img/product/men/proguct_pm2.png" alt="product2">
+                        <div class="product__box-content">
+                            <p class="product__box-name">MANGO PEOPLE T-SHIRT</p>
+                            <p class="product__box-price">$ 52.00</p>
                         </div>
                     </a>
-                    <div class="product-but">
-                        <div class="product-addCard">
-                            <a class="button product-but__button" href="#">
+                    <div class="butcard">
+                        <div class="butcard__addCard">
+                            <a class="button butcard__button" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="27px" height="25px" viewBox="0 0 27 25">
                                     <path fill-rule="evenodd" fill="#ffffff"
                                         d="M2.850647,3.793457 C2.850647,3.793457 5.2894897,3.793457 5.2894897,3.793457 C5.2894897,3.793457 8.763306,17.035156 8.763306,17.035156 C8.862488,17.423706 9.202759,17.692627 9.585693,17.692627 C9.585693,17.692627 20.26233,17.692627 20.26233,17.692627 C20.602722,17.692627 20.900452,17.48352 21.042175,17.154785 C21.042175,17.154785 24.927246,7.7391357 24.927246,7.7391357 C25.04065,7.454956 25.01233,7.1411133 24.856262,6.887085 C24.700378,6.6330566 24.43097,6.4835205 24.147339,6.4835205 C24.147339,6.4835205 12.350586,6.4835205 12.350586,6.4835205 C11.882568,6.4835205 11.499817,6.887085 11.499817,7.380371 C11.499817,7.873413 11.882568,8.276978 12.350586,8.276978 C12.350586,8.276978 22.842957,8.276978 22.842957,8.276978 C22.842957,8.276978 19.695312,15.89917 19.695312,15.89917 C19.695312,15.89917 10.223694,15.89917 10.223694,15.89917 C10.223694,15.89917 6.749939,2.6574707 6.749939,2.6574707 C6.650635,2.268921 6.310364,1.9998779 5.9275513,1.9998779 C5.9275513,1.9998779 2.850647,1.9998779 2.850647,1.9998779 C2.3827515,1.9998779 1.999939,2.4034424 1.999939,2.8964844 C1.999939,3.3898926 2.3827515,3.793457 2.850647,3.793457 ZM8.777405,24.0 C9.840881,24.0 10.7057495,23.088135 10.7057495,21.967163 C10.7057495,20.846436 9.840881,19.93457 8.777405,19.93457 C7.7139893,19.93457 6.849121,20.846191 6.849121,21.967163 C6.849121,23.088135 7.7139893,24.0 8.777405,24.0 ZM20.82959,24.0 C20.872131,24.0 20.928772,24.0 20.971313,24.0 C21.481812,23.955078 21.949707,23.716064 22.289917,23.297485 C22.63031,22.89392 22.786255,22.370728 22.757935,21.817871 C22.68695,20.711914 21.765442,19.859863 20.701965,19.93457 C19.63855,20.0094 18.844482,20.995728 18.915344,22.101807 C18.986328,23.162964 19.822876,24.0 20.82959,24.0 Z" />
                                 </svg>
-                                <span class="product-textCard">Add to Cart</span></a>
+                                <span class="butcard__textCard">Add to Cart</span></a>
                         </div>
                     </div>
+                    <a class="butcard-retweet" href="#">
+                        <i class="fa fa-retweet" aria-hidden="true"></i></a>
+                    <a class="butcard-heart" href="#">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i></a>
                 </div>
-                <div class="product-unit">
-                    <a href="#" class="product-unit-link">
-                        <img class="product-img" src="img/product/men/product_m2.jpg" alt="product3">
-                        <div class="product-box-content">
-                            <p class="product-box-name">MANGO PEOPLE T-SHIRT</p>
-                            <p class="product-box-price">$ 52.00</p>
+                <div class="product__unit">
+                    <a href="single-page.html" class="product__unit-link">
+                        <img class="product__img" src="img/product/men/product_m2.jpg" alt="product3">
+                        <div class="product__box-content">
+                            <p class="product__box-name">MANGO PEOPLE T-SHIRT</p>
+                            <p class="product__box-price">$ 52.00</p>
                         </div>
                     </a>
-                    <div class="product-but">
-                        <div class="product-addCard">
-                            <a class="button product-but__button" href="#">
+                    <div class="butcard">
+                        <div class="butcard__addCard">
+                            <a class="button butcard__button" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="27px" height="25px" viewBox="0 0 27 25">
                                     <path fill-rule="evenodd" fill="#ffffff"
                                         d="M2.850647,3.793457 C2.850647,3.793457 5.2894897,3.793457 5.2894897,3.793457 C5.2894897,3.793457 8.763306,17.035156 8.763306,17.035156 C8.862488,17.423706 9.202759,17.692627 9.585693,17.692627 C9.585693,17.692627 20.26233,17.692627 20.26233,17.692627 C20.602722,17.692627 20.900452,17.48352 21.042175,17.154785 C21.042175,17.154785 24.927246,7.7391357 24.927246,7.7391357 C25.04065,7.454956 25.01233,7.1411133 24.856262,6.887085 C24.700378,6.6330566 24.43097,6.4835205 24.147339,6.4835205 C24.147339,6.4835205 12.350586,6.4835205 12.350586,6.4835205 C11.882568,6.4835205 11.499817,6.887085 11.499817,7.380371 C11.499817,7.873413 11.882568,8.276978 12.350586,8.276978 C12.350586,8.276978 22.842957,8.276978 22.842957,8.276978 C22.842957,8.276978 19.695312,15.89917 19.695312,15.89917 C19.695312,15.89917 10.223694,15.89917 10.223694,15.89917 C10.223694,15.89917 6.749939,2.6574707 6.749939,2.6574707 C6.650635,2.268921 6.310364,1.9998779 5.9275513,1.9998779 C5.9275513,1.9998779 2.850647,1.9998779 2.850647,1.9998779 C2.3827515,1.9998779 1.999939,2.4034424 1.999939,2.8964844 C1.999939,3.3898926 2.3827515,3.793457 2.850647,3.793457 ZM8.777405,24.0 C9.840881,24.0 10.7057495,23.088135 10.7057495,21.967163 C10.7057495,20.846436 9.840881,19.93457 8.777405,19.93457 C7.7139893,19.93457 6.849121,20.846191 6.849121,21.967163 C6.849121,23.088135 7.7139893,24.0 8.777405,24.0 ZM20.82959,24.0 C20.872131,24.0 20.928772,24.0 20.971313,24.0 C21.481812,23.955078 21.949707,23.716064 22.289917,23.297485 C22.63031,22.89392 22.786255,22.370728 22.757935,21.817871 C22.68695,20.711914 21.765442,19.859863 20.701965,19.93457 C19.63855,20.0094 18.844482,20.995728 18.915344,22.101807 C18.986328,23.162964 19.822876,24.0 20.82959,24.0 Z" />
                                 </svg>
-                                <span class="product-textCard">Add to Cart</span></a>
+                                <span class="butcard__textCard">Add to Cart</span></a>
                         </div>
                     </div>
+                    <a class="butcard-retweet" href="#">
+                        <i class="fa fa-retweet" aria-hidden="true"></i></a>
+                    <a class="butcard-heart" href="#">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i></a>
                 </div>
-                <div class="product-unit">
-                    <a href="#" class="product-unit-link">
-                        <img class="product-img" src="img/product/men/proguct_pm4.png" alt="product4">
-                        <div class="product-box-content">
-                            <p class="product-box-name">MANGO PEOPLE T-SHIRT</p>
-                            <p class="product-box-price">$ 52.00</p>
+                <div class="product__unit">
+                    <a href="single-page.html" class="product__unit-link">
+                        <img class="product__img" src="img/product/men/proguct_pm4.png" alt="product4">
+                        <div class="product__box-content">
+                            <p class="product__box-name">MANGO PEOPLE T-SHIRT</p>
+                            <p class="product__box-price">$ 52.00</p>
                         </div>
                     </a>
-                    <div class="product-but">
-                        <div class="product-addCard">
-                            <a class="button product-but__button" href="#">
+                    <div class="butcard">
+                        <div class="butcard__addCard">
+                            <a class="button butcard__button" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="27px" height="25px" viewBox="0 0 27 25">
                                     <path fill-rule="evenodd" fill="#ffffff"
                                         d="M2.850647,3.793457 C2.850647,3.793457 5.2894897,3.793457 5.2894897,3.793457 C5.2894897,3.793457 8.763306,17.035156 8.763306,17.035156 C8.862488,17.423706 9.202759,17.692627 9.585693,17.692627 C9.585693,17.692627 20.26233,17.692627 20.26233,17.692627 C20.602722,17.692627 20.900452,17.48352 21.042175,17.154785 C21.042175,17.154785 24.927246,7.7391357 24.927246,7.7391357 C25.04065,7.454956 25.01233,7.1411133 24.856262,6.887085 C24.700378,6.6330566 24.43097,6.4835205 24.147339,6.4835205 C24.147339,6.4835205 12.350586,6.4835205 12.350586,6.4835205 C11.882568,6.4835205 11.499817,6.887085 11.499817,7.380371 C11.499817,7.873413 11.882568,8.276978 12.350586,8.276978 C12.350586,8.276978 22.842957,8.276978 22.842957,8.276978 C22.842957,8.276978 19.695312,15.89917 19.695312,15.89917 C19.695312,15.89917 10.223694,15.89917 10.223694,15.89917 C10.223694,15.89917 6.749939,2.6574707 6.749939,2.6574707 C6.650635,2.268921 6.310364,1.9998779 5.9275513,1.9998779 C5.9275513,1.9998779 2.850647,1.9998779 2.850647,1.9998779 C2.3827515,1.9998779 1.999939,2.4034424 1.999939,2.8964844 C1.999939,3.3898926 2.3827515,3.793457 2.850647,3.793457 ZM8.777405,24.0 C9.840881,24.0 10.7057495,23.088135 10.7057495,21.967163 C10.7057495,20.846436 9.840881,19.93457 8.777405,19.93457 C7.7139893,19.93457 6.849121,20.846191 6.849121,21.967163 C6.849121,23.088135 7.7139893,24.0 8.777405,24.0 ZM20.82959,24.0 C20.872131,24.0 20.928772,24.0 20.971313,24.0 C21.481812,23.955078 21.949707,23.716064 22.289917,23.297485 C22.63031,22.89392 22.786255,22.370728 22.757935,21.817871 C22.68695,20.711914 21.765442,19.859863 20.701965,19.93457 C19.63855,20.0094 18.844482,20.995728 18.915344,22.101807 C18.986328,23.162964 19.822876,24.0 20.82959,24.0 Z" />
                                 </svg>
-                                <span class="product-textCard">Add to Cart</span></a>
+                                <span class="butcard__textCard">Add to Cart</span></a>
                         </div>
                     </div>
+                    <a class="butcard-retweet" href="#">
+                        <i class="fa fa-retweet" aria-hidden="true"></i></a>
+                    <a class="butcard-heart" href="#">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i></a>
                 </div>
-                <div class="product-unit">
-                    <a href="#" class="product-unit-link">
-                        <img class="product-img" src="img/product/men/product_m5.jpg" alt="product5">
-                        <div class="product-box-content">
-                            <p class="product-box-name">MANGO PEOPLE T-SHIRT</p>
-                            <p class="product-box-price">$ 52.00</p>
+                <div class="product__unit">
+                    <a href="single-page.html" class="product__unit-link">
+                        <img class="product__img" src="img/product/men/product_m5.jpg" alt="product5">
+                        <div class="product__box-content">
+                            <p class="product__box-name">MANGO PEOPLE T-SHIRT</p>
+                            <p class="product__box-price">$ 52.00</p>
                         </div>
                     </a>
-                    <div class="product-but">
-                        <div class="product-addCard">
-                            <a class="button product-but__button" href="#">
+                    <div class="butcard">
+                        <div class="butcard__addCard">
+                            <a class="button butcard__button" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="27px" height="25px" viewBox="0 0 27 25">
                                     <path fill-rule="evenodd" fill="#ffffff"
                                         d="M2.850647,3.793457 C2.850647,3.793457 5.2894897,3.793457 5.2894897,3.793457 C5.2894897,3.793457 8.763306,17.035156 8.763306,17.035156 C8.862488,17.423706 9.202759,17.692627 9.585693,17.692627 C9.585693,17.692627 20.26233,17.692627 20.26233,17.692627 C20.602722,17.692627 20.900452,17.48352 21.042175,17.154785 C21.042175,17.154785 24.927246,7.7391357 24.927246,7.7391357 C25.04065,7.454956 25.01233,7.1411133 24.856262,6.887085 C24.700378,6.6330566 24.43097,6.4835205 24.147339,6.4835205 C24.147339,6.4835205 12.350586,6.4835205 12.350586,6.4835205 C11.882568,6.4835205 11.499817,6.887085 11.499817,7.380371 C11.499817,7.873413 11.882568,8.276978 12.350586,8.276978 C12.350586,8.276978 22.842957,8.276978 22.842957,8.276978 C22.842957,8.276978 19.695312,15.89917 19.695312,15.89917 C19.695312,15.89917 10.223694,15.89917 10.223694,15.89917 C10.223694,15.89917 6.749939,2.6574707 6.749939,2.6574707 C6.650635,2.268921 6.310364,1.9998779 5.9275513,1.9998779 C5.9275513,1.9998779 2.850647,1.9998779 2.850647,1.9998779 C2.3827515,1.9998779 1.999939,2.4034424 1.999939,2.8964844 C1.999939,3.3898926 2.3827515,3.793457 2.850647,3.793457 ZM8.777405,24.0 C9.840881,24.0 10.7057495,23.088135 10.7057495,21.967163 C10.7057495,20.846436 9.840881,19.93457 8.777405,19.93457 C7.7139893,19.93457 6.849121,20.846191 6.849121,21.967163 C6.849121,23.088135 7.7139893,24.0 8.777405,24.0 ZM20.82959,24.0 C20.872131,24.0 20.928772,24.0 20.971313,24.0 C21.481812,23.955078 21.949707,23.716064 22.289917,23.297485 C22.63031,22.89392 22.786255,22.370728 22.757935,21.817871 C22.68695,20.711914 21.765442,19.859863 20.701965,19.93457 C19.63855,20.0094 18.844482,20.995728 18.915344,22.101807 C18.986328,23.162964 19.822876,24.0 20.82959,24.0 Z" />
                                 </svg>
-                                <span class="product-textCard">Add to Cart</span></a>
+                                <span class="butcard__textCard">Add to Cart</span></a>
                         </div>
                     </div>
+                    <a class="butcard-retweet" href="#">
+                        <i class="fa fa-retweet" aria-hidden="true"></i></a>
+                    <a class="butcard-heart" href="#">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i></a>
                 </div>
-                <div class="product-unit">
-                    <a href="#" class="product-unit-link">
-                        <img class="product-img" src="img/product/men/proguct_pm6.png" alt="product6">
-                        <div class="product-box-content">
-                            <p class="product-box-name">MANGO PEOPLE T-SHIRT</p>
-                            <p class="product-box-price">$ 52.00</p>
+                <div class="product__unit">
+                    <a href="single-page.html" class="product__unit-link">
+                        <img class="product__img" src="img/product/men/proguct_pm6.png" alt="product6">
+                        <div class="product__box-content">
+                            <p class="product__box-name">MANGO PEOPLE T-SHIRT</p>
+                            <p class="product__box-price">$ 52.00</p>
                         </div>
                     </a>
-                    <div class="product-but">
-                        <div class="product-addCard">
-                            <a class="button product-but__button" href="#">
+                    <div class="butcard">
+                        <div class="butcard__addCard">
+                            <a class="button butcard__button" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="27px" height="25px" viewBox="0 0 27 25">
                                     <path fill-rule="evenodd" fill="#ffffff"
                                         d="M2.850647,3.793457 C2.850647,3.793457 5.2894897,3.793457 5.2894897,3.793457 C5.2894897,3.793457 8.763306,17.035156 8.763306,17.035156 C8.862488,17.423706 9.202759,17.692627 9.585693,17.692627 C9.585693,17.692627 20.26233,17.692627 20.26233,17.692627 C20.602722,17.692627 20.900452,17.48352 21.042175,17.154785 C21.042175,17.154785 24.927246,7.7391357 24.927246,7.7391357 C25.04065,7.454956 25.01233,7.1411133 24.856262,6.887085 C24.700378,6.6330566 24.43097,6.4835205 24.147339,6.4835205 C24.147339,6.4835205 12.350586,6.4835205 12.350586,6.4835205 C11.882568,6.4835205 11.499817,6.887085 11.499817,7.380371 C11.499817,7.873413 11.882568,8.276978 12.350586,8.276978 C12.350586,8.276978 22.842957,8.276978 22.842957,8.276978 C22.842957,8.276978 19.695312,15.89917 19.695312,15.89917 C19.695312,15.89917 10.223694,15.89917 10.223694,15.89917 C10.223694,15.89917 6.749939,2.6574707 6.749939,2.6574707 C6.650635,2.268921 6.310364,1.9998779 5.9275513,1.9998779 C5.9275513,1.9998779 2.850647,1.9998779 2.850647,1.9998779 C2.3827515,1.9998779 1.999939,2.4034424 1.999939,2.8964844 C1.999939,3.3898926 2.3827515,3.793457 2.850647,3.793457 ZM8.777405,24.0 C9.840881,24.0 10.7057495,23.088135 10.7057495,21.967163 C10.7057495,20.846436 9.840881,19.93457 8.777405,19.93457 C7.7139893,19.93457 6.849121,20.846191 6.849121,21.967163 C6.849121,23.088135 7.7139893,24.0 8.777405,24.0 ZM20.82959,24.0 C20.872131,24.0 20.928772,24.0 20.971313,24.0 C21.481812,23.955078 21.949707,23.716064 22.289917,23.297485 C22.63031,22.89392 22.786255,22.370728 22.757935,21.817871 C22.68695,20.711914 21.765442,19.859863 20.701965,19.93457 C19.63855,20.0094 18.844482,20.995728 18.915344,22.101807 C18.986328,23.162964 19.822876,24.0 20.82959,24.0 Z" />
                                 </svg>
-                                <span class="product-textCard">Add to Cart</span></a>
+                                <span class="butcard__textCard">Add to Cart</span></a>
                         </div>
                     </div>
+                    <a class="butcard-retweet" href="#">
+                        <i class="fa fa-retweet" aria-hidden="true"></i></a>
+                    <a class="butcard-heart" href="#">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i></a>
                 </div>
-                <div class="product-unit">
-                    <a href="#" class="product-unit-link">
-                        <img class="product-img" src="img/product/men/product_m3.jpg" alt="product7">
-                        <div class="product-box-content">
-                            <p class="product-box-name">MANGO PEOPLE T-SHIRT</p>
-                            <p class="product-box-price">$ 52.00</p>
+                <div class="product__unit">
+                    <a href="single-page.html" class="product__unit-link">
+                        <img class="product__img" src="img/product/men/product_m3.jpg" alt="product7">
+                        <div class="product__box-content">
+                            <p class="product__box-name">MANGO PEOPLE T-SHIRT</p>
+                            <p class="product__box-price">$ 52.00</p>
                         </div>
                     </a>
-                    <div class="product-but">
-                        <div class="product-addCard">
-                            <a class="button product-but__button" href="#">
+                    <div class="butcard">
+                        <div class="butcard__addCard">
+                            <a class="button butcard__button" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="27px" height="25px" viewBox="0 0 27 25">
                                     <path fill-rule="evenodd" fill="#ffffff"
                                         d="M2.850647,3.793457 C2.850647,3.793457 5.2894897,3.793457 5.2894897,3.793457 C5.2894897,3.793457 8.763306,17.035156 8.763306,17.035156 C8.862488,17.423706 9.202759,17.692627 9.585693,17.692627 C9.585693,17.692627 20.26233,17.692627 20.26233,17.692627 C20.602722,17.692627 20.900452,17.48352 21.042175,17.154785 C21.042175,17.154785 24.927246,7.7391357 24.927246,7.7391357 C25.04065,7.454956 25.01233,7.1411133 24.856262,6.887085 C24.700378,6.6330566 24.43097,6.4835205 24.147339,6.4835205 C24.147339,6.4835205 12.350586,6.4835205 12.350586,6.4835205 C11.882568,6.4835205 11.499817,6.887085 11.499817,7.380371 C11.499817,7.873413 11.882568,8.276978 12.350586,8.276978 C12.350586,8.276978 22.842957,8.276978 22.842957,8.276978 C22.842957,8.276978 19.695312,15.89917 19.695312,15.89917 C19.695312,15.89917 10.223694,15.89917 10.223694,15.89917 C10.223694,15.89917 6.749939,2.6574707 6.749939,2.6574707 C6.650635,2.268921 6.310364,1.9998779 5.9275513,1.9998779 C5.9275513,1.9998779 2.850647,1.9998779 2.850647,1.9998779 C2.3827515,1.9998779 1.999939,2.4034424 1.999939,2.8964844 C1.999939,3.3898926 2.3827515,3.793457 2.850647,3.793457 ZM8.777405,24.0 C9.840881,24.0 10.7057495,23.088135 10.7057495,21.967163 C10.7057495,20.846436 9.840881,19.93457 8.777405,19.93457 C7.7139893,19.93457 6.849121,20.846191 6.849121,21.967163 C6.849121,23.088135 7.7139893,24.0 8.777405,24.0 ZM20.82959,24.0 C20.872131,24.0 20.928772,24.0 20.971313,24.0 C21.481812,23.955078 21.949707,23.716064 22.289917,23.297485 C22.63031,22.89392 22.786255,22.370728 22.757935,21.817871 C22.68695,20.711914 21.765442,19.859863 20.701965,19.93457 C19.63855,20.0094 18.844482,20.995728 18.915344,22.101807 C18.986328,23.162964 19.822876,24.0 20.82959,24.0 Z" />
                                 </svg>
-                                <span class="product-textCard">Add to Cart</span></a>
+                                <span class="butcard__textCard">Add to Cart</span></a>
                         </div>
                     </div>
+                    <a class="butcard-retweet" href="#">
+                        <i class="fa fa-retweet" aria-hidden="true"></i></a>
+                    <a class="butcard-heart" href="#">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i></a>
                 </div>
-                <div class="product-unit">
-                    <a href="#" class="product-unit-link">
-                        <img class="product-img" src="img/product/men/proguct_pm8.png" alt="product8">
-                        <div class="product-box-content">
-                            <p class="product-box-name">MANGO PEOPLE T-SHIRT</p>
-                            <p class="product-box-price">$ 52.00</p>
+                <div class="product__unit">
+                    <a href="single-page.html" class="product__unit-link">
+                        <img class="product__img" src="img/product/men/proguct_pm8.png" alt="product8">
+                        <div class="product__box-content">
+                            <p class="product__box-name">MANGO PEOPLE T-SHIRT</p>
+                            <p class="product__box-price">$ 52.00</p>
                         </div>
                     </a>
-                    <div class="product-but">
-                        <div class="product-addCard">
-                            <a class="button product-but__button" href="#">
+                    <div class="butcard">
+                        <div class="butcard__addCard">
+                            <a class="button butcard__button" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="27px" height="25px" viewBox="0 0 27 25">
                                     <path fill-rule="evenodd" fill="#ffffff"
                                         d="M2.850647,3.793457 C2.850647,3.793457 5.2894897,3.793457 5.2894897,3.793457 C5.2894897,3.793457 8.763306,17.035156 8.763306,17.035156 C8.862488,17.423706 9.202759,17.692627 9.585693,17.692627 C9.585693,17.692627 20.26233,17.692627 20.26233,17.692627 C20.602722,17.692627 20.900452,17.48352 21.042175,17.154785 C21.042175,17.154785 24.927246,7.7391357 24.927246,7.7391357 C25.04065,7.454956 25.01233,7.1411133 24.856262,6.887085 C24.700378,6.6330566 24.43097,6.4835205 24.147339,6.4835205 C24.147339,6.4835205 12.350586,6.4835205 12.350586,6.4835205 C11.882568,6.4835205 11.499817,6.887085 11.499817,7.380371 C11.499817,7.873413 11.882568,8.276978 12.350586,8.276978 C12.350586,8.276978 22.842957,8.276978 22.842957,8.276978 C22.842957,8.276978 19.695312,15.89917 19.695312,15.89917 C19.695312,15.89917 10.223694,15.89917 10.223694,15.89917 C10.223694,15.89917 6.749939,2.6574707 6.749939,2.6574707 C6.650635,2.268921 6.310364,1.9998779 5.9275513,1.9998779 C5.9275513,1.9998779 2.850647,1.9998779 2.850647,1.9998779 C2.3827515,1.9998779 1.999939,2.4034424 1.999939,2.8964844 C1.999939,3.3898926 2.3827515,3.793457 2.850647,3.793457 ZM8.777405,24.0 C9.840881,24.0 10.7057495,23.088135 10.7057495,21.967163 C10.7057495,20.846436 9.840881,19.93457 8.777405,19.93457 C7.7139893,19.93457 6.849121,20.846191 6.849121,21.967163 C6.849121,23.088135 7.7139893,24.0 8.777405,24.0 ZM20.82959,24.0 C20.872131,24.0 20.928772,24.0 20.971313,24.0 C21.481812,23.955078 21.949707,23.716064 22.289917,23.297485 C22.63031,22.89392 22.786255,22.370728 22.757935,21.817871 C22.68695,20.711914 21.765442,19.859863 20.701965,19.93457 C19.63855,20.0094 18.844482,20.995728 18.915344,22.101807 C18.986328,23.162964 19.822876,24.0 20.82959,24.0 Z" />
                                 </svg>
-                                <span class="product-textCard">Add to Cart</span></a>
+                                <span class="butcard__textCard">Add to Cart</span></a>
                         </div>
                     </div>
+                    <a class="butcard-retweet" href="#">
+                        <i class="fa fa-retweet" aria-hidden="true"></i></a>
+                    <a class="butcard-heart" href="#">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i></a>
                 </div>
-                <div class="product-unit">
-                    <a href="#" class="product-unit-link">
-                        <img class="product-img" src="img/product/men/proguct_pm9.png" alt="product8">
-                        <div class="product-box-content">
-                            <p class="product-box-name">MANGO PEOPLE T-SHIRT</p>
-                            <p class="product-box-price">$ 52.00</p>
+                <div class="product__unit">
+                    <a href="single-page.html" class="product__unit-link">
+                        <img class="product__img" src="img/product/men/proguct_pm9.png" alt="product8">
+                        <div class="product__box-content">
+                            <p class="product__box-name">MANGO PEOPLE T-SHIRT</p>
+                            <p class="product__box-price">$ 52.00</p>
                         </div>
                     </a>
-                    <div class="product-but">
-                        <div class="product-addCard">
-                            <a class="button product-but__button" href="#">
+                    <div class="butcard">
+                        <div class="butcard__addCard">
+                            <a class="button butcard__button" href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="27px" height="25px" viewBox="0 0 27 25">
                                     <path fill-rule="evenodd" fill="#ffffff"
                                         d="M2.850647,3.793457 C2.850647,3.793457 5.2894897,3.793457 5.2894897,3.793457 C5.2894897,3.793457 8.763306,17.035156 8.763306,17.035156 C8.862488,17.423706 9.202759,17.692627 9.585693,17.692627 C9.585693,17.692627 20.26233,17.692627 20.26233,17.692627 C20.602722,17.692627 20.900452,17.48352 21.042175,17.154785 C21.042175,17.154785 24.927246,7.7391357 24.927246,7.7391357 C25.04065,7.454956 25.01233,7.1411133 24.856262,6.887085 C24.700378,6.6330566 24.43097,6.4835205 24.147339,6.4835205 C24.147339,6.4835205 12.350586,6.4835205 12.350586,6.4835205 C11.882568,6.4835205 11.499817,6.887085 11.499817,7.380371 C11.499817,7.873413 11.882568,8.276978 12.350586,8.276978 C12.350586,8.276978 22.842957,8.276978 22.842957,8.276978 C22.842957,8.276978 19.695312,15.89917 19.695312,15.89917 C19.695312,15.89917 10.223694,15.89917 10.223694,15.89917 C10.223694,15.89917 6.749939,2.6574707 6.749939,2.6574707 C6.650635,2.268921 6.310364,1.9998779 5.9275513,1.9998779 C5.9275513,1.9998779 2.850647,1.9998779 2.850647,1.9998779 C2.3827515,1.9998779 1.999939,2.4034424 1.999939,2.8964844 C1.999939,3.3898926 2.3827515,3.793457 2.850647,3.793457 ZM8.777405,24.0 C9.840881,24.0 10.7057495,23.088135 10.7057495,21.967163 C10.7057495,20.846436 9.840881,19.93457 8.777405,19.93457 C7.7139893,19.93457 6.849121,20.846191 6.849121,21.967163 C6.849121,23.088135 7.7139893,24.0 8.777405,24.0 ZM20.82959,24.0 C20.872131,24.0 20.928772,24.0 20.971313,24.0 C21.481812,23.955078 21.949707,23.716064 22.289917,23.297485 C22.63031,22.89392 22.786255,22.370728 22.757935,21.817871 C22.68695,20.711914 21.765442,19.859863 20.701965,19.93457 C19.63855,20.0094 18.844482,20.995728 18.915344,22.101807 C18.986328,23.162964 19.822876,24.0 20.82959,24.0 Z" />
                                 </svg>
-                                <span class="product-textCard">Add to Cart</span></a>
+                                <span class="butcard__textCard">Add to Cart</span></a>
                         </div>
                     </div>
+                    <a class="butcard-retweet" href="#">
+                        <i class="fa fa-retweet" aria-hidden="true"></i></a>
+                    <a class="butcard-heart" href="#">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i></a>
                 </div>
             </div>
         </section>
@@ -603,8 +708,8 @@
             <nav aria-label="Page navigation example">
                 <ul class="pagination">
                     <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
+                        <a class="page-link" href="#">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
                         </a>
                     </li>
                     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -616,8 +721,8 @@
                     <li class="page-item"><a class="page-link" href="#">...</a></li>
                     <li class="page-item"><a class="page-link" href="#">20</a></li>
                     <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
+                        <a class="page-link" href="#">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
                         </a>
                     </li>
                 </ul>
@@ -669,162 +774,162 @@
             </p>
         </div>
     </div>
-    <section class="subscribe center">
-        <div class="subscribe-cont">
-            <div class="subscribe-left">
-                <img src="img/subscrabe_img.svg" alt="" class="subscribe-left-img">
-                <div class="subscribe-left-content">
-                    <p class="subscribe-left-textItalic">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
-                        pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
-                    <p class="subscribe-left-text">
-                        <span class="subscribe-left-textColor">Bin Burhan</span> <br>
-                        Dhaka, Bd
-                    </p>
-                    <div class="subscribe-left-carusel">
-                        <img class="subscribe-left-carusel-img" src="img/logo/subscribe_vector.svg" alt="">
-                        <img class="subscribe-left-carusel-imgColor" src="img/logo/subsribe_vector_col.svg" alt="">
-                        <img class="subscribe-left-carusel-img" src="img/logo/subscribe_vector.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="subscribe-right">
-                <p class="subscribe-right-title">SUBSCRIBE </p>
-                <p class="subscribe-right-subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
-                <div class="subscribe-right-forma">
-                    <input class="subscribe-right-inputEmail" type="email" id="forma" placeholder="Enter Your Email">
-                    <div class="subscribe-but">
-                        <a href="#" class="button subscribe-but__button"><span>Subscribe</span></a>
-                    </div>
-                </div>
 
-            </div>
-        </div>
-    </section>
-    <section class="bottom">
-        <div class="bottom-content">
-            <div class="bottom-left">
-                <div class="header-left-logo">
-                    <a href="index.html" class="header-logotype"><svg width="44.000000" height="38.000000"
-                            viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs>
-                                <pattern id="pattern_190_12010" patternContentUnits="objectBoundingBox" width="1.000000"
-                                    height="1.000000">
-                                    <use xlink:href="#image190_1201_0" transform="matrix(0.022727,0,0,0.026316,0,0)" />
-                                </pattern>
-                                <image id="image190_1201_0" width="44.000000" height="38.000000"
-                                    xlink:href="data:image/png;base64,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" />
-                            </defs>
-                            <rect id="Group 2" width="44.000000" height="38.000000" fill="url(#pattern_190_12010)"
-                                fill-opacity="1.000000" />
-                        </svg>
-                    </a>
-
-                    <a class="header-left-textlogo" href="index.html">BRAN<span
-                            class="header-left-colortext">D</span></a>
-                </div>
-                <article class="bottom-description">
-                    Objectively transition extensive data rather than cross functional solutions. Monotonectally
-                    syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded
-                    array of processes and cross-unit partnerships.
-                    Efficiently plagiarize 24/365 action items and focused infomediaries.
-                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
-                </article>
-            </div>
-            <div class="bottom-right">
-                <div class="bottom-right-box">
-                    <p class="bottom-right-boxTitle">
-                        COMPANY
-                    </p>
-                    <div class="bottom-right-linkbox">
-                        <a href="#" class="bottom-right-link">Home</a>
-                        <a href="#" class="bottom-right-link">Shop</a>
-                        <a href="#" class="bottom-right-link">About</a>
-                        <a href="#" class="bottom-right-link">How&nbsp;It&nbsp;Works</a>
-                        <a href="#" class="bottom-right-link">Contact</a>
-
-                    </div>
-                </div>
-                <div class="bottom-right-box">
-                    <p class="bottom-right-boxTitle">
-                        INFORMATION
-                    </p>
-                    <div class="bottom-right-linkbox">
-                        <a href="#" class="bottom-right-link">Tearms&nbsp;&&nbsp;Condition</a>
-                        <a href="#" class="bottom-right-link">Privacy&nbsp;Policy</a>
-                        <a href="#" class="bottom-right-link">How&nbsp;to&nbsp;Buy</a>
-                        <a href="#" class="bottom-right-link">How&nbsp;to&nbsp;Sell</a>
-                        <a href="#" class="bottom-right-link">Promotion</a>
-
-                    </div>
-                </div>
-                <div class="bottom-right-box">
-                    <p class="bottom-right-boxTitle">
-                        SHOP&nbsp;CATEGORY
-                    </p>
-                    <div class="bottom-right-linkbox">
-                        <a href="#" class="bottom-right-link">Men</a>
-                        <a href="#" class="bottom-right-link">Women</a>
-                        <a href="#" class="bottom-right-link">Child</a>
-                        <a href="#" class="bottom-right-link">Apparel</a>
-                        <a href="#" class="bottom-right-link">Brows&nbsp;All</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer class="footer">
-        <p class="footer-text">&copy;&nbsp;2021 Brand All Rights Reserved.</p>
-        <nav class="footer-icons">
-            <div class="footer-icons-icon">
-                <svg width="8.070343" height="14.720001" viewBox="0 0 8.07034 14.72" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                        d="M7.54147 8.28L7.95999 5.61603L5.34335 5.61603L5.34335 3.8873C5.34335 3.15848 5.70886 2.44806 6.88077 2.44806L8.07034 2.44806L8.07034 0.179962C8.07034 0.179962 6.99084 0 5.95874 0C3.80386 0 2.39532 1.27594 2.39532 3.58569L2.39532 5.61603L0 5.61603L0 8.28L2.39532 8.28L2.39532 14.72L5.34335 14.72L5.34335 8.28L7.54147 8.28Z"
-                        fill="#b2b2b2" fill-opacity="1.000000" fill-rule="nonzero" />
-                </svg>
-            </div>
-            <div class="footer-icons-icon">
-                <svg class="icon" width="14.907471" height="14.879974" viewBox="0 0 14.9075 14.88" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                        d="M7.45532 3.62494C5.34021 3.62494 3.63416 5.32828 3.63416 7.44C3.63416 9.5517 5.34021 11.255 7.45532 11.255C9.57056 11.255 11.2766 9.5517 11.2766 7.44C11.2766 5.32828 9.57056 3.62494 7.45532 3.62494ZM7.45532 9.92026C6.0885 9.92026 4.97107 8.80795 4.97107 7.44C4.97107 6.07202 6.08521 4.95972 7.45532 4.95972C8.82556 4.95972 9.9397 6.07202 9.9397 7.44C9.9397 8.80795 8.82227 9.92026 7.45532 9.92026ZM12.3242 3.4689C12.3242 3.96362 11.925 4.35873 11.4329 4.35873C10.9374 4.35873 10.5416 3.9603 10.5416 3.4689C10.5416 2.97748 10.9407 2.57904 11.4329 2.57904C11.925 2.57904 12.3242 2.97748 12.3242 3.4689ZM14.855 4.37201C14.7985 3.18002 14.5258 2.12418 13.6511 1.25424C12.7798 0.384338 11.7223 0.112061 10.5283 0.0523071C9.29785 -0.0174255 5.60962 -0.0174255 4.37915 0.0523071C3.18848 0.108734 2.13098 0.381012 1.25623 1.25092C0.381592 2.12085 0.112183 3.1767 0.0523682 4.36871C-0.0174561 5.59723 -0.0174561 9.27945 0.0523682 10.508C0.108887 11.7 0.381592 12.7558 1.25623 13.6257C2.13098 14.4957 3.18518 14.7679 4.37915 14.8277C5.60962 14.8974 9.29785 14.8974 10.5283 14.8277C11.7223 14.7712 12.7798 14.499 13.6511 13.6257C14.5225 12.7558 14.7952 11.7 14.855 10.508C14.9249 9.27945 14.9249 5.60052 14.855 4.37201ZM13.2654 11.8261C13.006 12.4769 12.5038 12.9783 11.8486 13.2406C10.8676 13.6291 8.53955 13.5394 7.45532 13.5394C6.37122 13.5394 4.03992 13.6257 3.06213 13.2406C2.41028 12.9816 1.90808 12.4802 1.64539 11.8261C1.25623 10.8466 1.34607 8.5224 1.34607 7.44C1.34607 6.35757 1.25964 4.03003 1.64539 3.05386C1.90479 2.40308 2.40698 1.9017 3.06213 1.6394C4.04321 1.25092 6.37122 1.34058 7.45532 1.34058C8.53955 1.34058 10.8708 1.25424 11.8486 1.6394C12.5005 1.89838 13.0027 2.39975 13.2654 3.05386C13.6544 4.03336 13.5647 6.35757 13.5647 7.44C13.5647 8.5224 13.6544 10.8499 13.2654 11.8261Z"
-                        fill="#b2b2b2" fill-opacity="1.000000" fill-rule="nonzero" />
-                </svg>
-            </div>
-            <div class="footer-icons-icon">
-                <svg width="11.919312" height="15.597107" viewBox="0 0 11.9193 15.5971" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                        d="M6.33209 0C3.14746 0 0 2.13751 0 5.59686C0 7.79688 1.22919 9.04688 1.97412 9.04688C2.28143 9.04688 2.45837 8.18439 2.45837 7.94061C2.45837 7.64999 1.72272 7.03125 1.72272 5.82187C1.72272 3.30939 3.62231 1.52814 6.08069 1.52814C8.19452 1.52814 9.75891 2.73749 9.75891 4.95938C9.75891 6.61874 9.09778 9.73126 6.95599 9.73126C6.18311 9.73126 5.52197 9.16876 5.52197 8.36249C5.52197 7.18124 6.34143 6.03751 6.34143 4.81876C6.34143 2.75 3.42682 3.125 3.42682 5.625C3.42682 6.14999 3.492 6.73126 3.72479 7.20938C3.29645 9.06561 2.42108 11.8312 2.42108 13.7437C2.42108 14.3344 2.50488 14.9156 2.56079 15.5063C2.66632 15.625 2.61353 15.6125 2.77496 15.5531C4.33936 13.3969 4.28351 12.975 4.99121 10.1531C5.37299 10.8844 6.36005 11.2781 7.14227 11.2781C10.4387 11.2781 11.9193 8.04376 11.9193 5.12811C11.9193 2.02499 9.25604 0 6.33209 0Z"
-                        fill="#b2b2b2" fill-opacity="1.000000" fill-rule="nonzero" />
-                </svg>
-            </div>
-            <div class="footer-icons-icon">
-                <svg width="15.892334" height="12.994904" viewBox="0 0 15.8923 12.9949" fill="none"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs />
-                    <path id="Vector"
-                        d="M14.2587 3.23856C14.2689 3.38068 14.2689 3.52286 14.2689 3.66498C14.2689 7.99997 10.9916 12.9949 5.00165 12.9949C3.15631 12.9949 1.44202 12.4568 0 11.5229C0.262207 11.5533 0.514282 11.5634 0.78656 11.5634C2.3092 11.5634 3.71088 11.0457 4.8302 10.1624C3.39832 10.132 2.1983 9.18781 1.78485 7.88831C1.98657 7.91876 2.18823 7.93906 2.40002 7.93906C2.69244 7.93906 2.98486 7.89844 3.25714 7.82739C1.76471 7.52283 0.645325 6.20303 0.645325 4.60913L0.645325 4.56854C1.07892 4.81219 1.58319 4.96448 2.11761 4.98474C1.2403 4.3959 0.665527 3.39084 0.665527 2.25378C0.665527 1.64465 0.826843 1.08627 1.10919 0.598969C2.71259 2.58881 5.12268 3.88828 7.82513 4.03043C7.77472 3.78677 7.74445 3.53299 7.74445 3.27917C7.74445 1.47208 9.19653 0 11.0016 0C11.9394 0 12.7864 0.395935 13.3814 1.03552C14.1175 0.893402 14.8234 0.619293 15.4486 0.243652C15.2066 1.0051 14.6923 1.64468 14.0167 2.05075C14.6722 1.97971 15.3074 1.79694 15.8923 1.54315C15.4487 2.19287 14.894 2.77155 14.2587 3.23856Z"
-                        fill="#b2b2b2" fill-opacity="1.000000" fill-rule="nonzero" />
-                </svg>
-            </div>
-            <div class="footer-icons-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" height="16">
-                    <path
-                        d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
-                        fill="#b2b2b2" fill-opacity="1.000000" fill-rule="nonzero" />
-                </svg>
-            </div>
-        </nav>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        <section class="subscribe center">
+            <div class="subscribe-cont">
+                <figure class="subscribe-left">
+                    <img src="img/subscrabe_img.svg" alt="" class="subscribe-left-img">
+                    <div class="subscribe-left-content">
+                        <p class="subscribe-left-textItalic">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                        <p class="subscribe-left-text">
+                            <span class="subscribe-left-textColor">Bin Burhan</span> <br>
+                            Dhaka, Bd
+                        </p>
+                        <div class="subscribe-left-carusel">
+                            <img class="subscribe-left-carusel-img" src="img/logo/subscribe_vector.svg" alt="">
+                            <img class="subscribe-left-carusel-imgColor" src="img/logo/subsribe_vector_col.svg" alt="">
+                            <img class="subscribe-left-carusel-img" src="img/logo/subscribe_vector.svg" alt="">
+                        </div>
+                    </div>
+                </figure>
+                <div class="subscribe-right">
+                    <p class="subscribe-right-title">SUBSCRIBE </p>
+                    <p class="subscribe-right-subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="subscribe-right-forma">
+                        <input class="subscribe-right-inputEmail" type="email" id="forma"
+                            placeholder="Enter Your Email">
+                        <div class="subscribe-but">
+                            <input type="submit" class="button subscribe-but__button button_hover" value="Subscribe">
+                        </div>
+                    </form>
 
+                </div>
+            </div>
+        </section>
+        <section class="aside center">
+            <div class="aside-content">
+                <div class="aside-left">
+                    <div class="aside__logo">
+                        <a href="index.html" class="header-logotype"><svg width="44.000000" height="38.000000"
+                                viewBox="0 0 44 38" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <pattern id="pattern_190_12010" patternContentUnits="objectBoundingBox"
+                                        width="1.000000" height="1.000000">
+                                        <use xlink:href="#image190_1201_0"
+                                            transform="matrix(0.022727,0,0,0.026316,0,0)" />
+                                    </pattern>
+                                    <image id="image190_1201_0" width="44.000000" height="38.000000"
+                                        xlink:href="data:image/png;base64,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" />
+                                </defs>
+                                <rect id="Group 2" width="44.000000" height="38.000000" fill="url(#pattern_190_12010)"
+                                    fill-opacity="1.000000" />
+                            </svg>
+                        </a>
+
+                        <a class="header-left-textlogo" href="index.html">BRAN<span
+                                class="header-left-colortext">D</span></a>
+                    </div>
+                    <article class="aside-description">
+                        Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                        syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                        expanded
+                        array of processes and cross-unit partnerships.
+                        Efficiently plagiarize 24/365 action items and focused infomediaries.
+                        Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                    </article>
+                </div>
+                <nav class="aside-right">
+                    <div class="aside-right-box">
+                        <p class="aside-right-boxTitle">
+                            COMPANY
+                        </p>
+                        <div class="aside-right-linkbox">
+                            <a href="#" class="aside-right-link">Home</a>
+                            <a href="#" class="aside-right-link">Shop</a>
+                            <a href="#" class="aside-right-link">About</a>
+                            <a href="#" class="aside-right-link">How&nbsp;It&nbsp;Works</a>
+                            <a href="#" class="aside-right-link">Contact</a>
+                        </div>
+                    </div>
+                    <div class="aside-right-box">
+                        <p class="aside-right-boxTitle">
+                            INFORMATION
+                        </p>
+                        <div class="aside-right-linkbox">
+                            <a href="#" class="aside-right-link">Tearms&nbsp;&&nbsp;Condition</a>
+                            <a href="#" class="aside-right-link">Privacy&nbsp;Policy</a>
+                            <a href="#" class="aside-right-link">How&nbsp;to&nbsp;Buy</a>
+                            <a href="#" class="aside-right-link">How&nbsp;to&nbsp;Sell</a>
+                            <a href="#" class="aside-right-link">Promotion</a>
+                        </div>
+                    </div>
+                    <div class="aside-right-box">
+                        <p class="aside-right-boxTitle">
+                            SHOP&nbsp;CATEGORY
+                        </p>
+                        <div class="aside-right-linkbox">
+                            <a href="#" class="aside-right-link">Men</a>
+                            <a href="#" class="aside-right-link">Women</a>
+                            <a href="#" class="aside-right-link">Child</a>
+                            <a href="#" class="aside-right-link">Apparel</a>
+                            <a href="#" class="aside-right-link">Brows&nbsp;All</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <p class="footer-text">&copy;&nbsp;2021 Brand All Rights Reserved.</p>
+            <nav class="footer-icons">
+                <div class="footer-icons-icon">
+                    <svg width="8.070343" height="14.720001" viewBox="0 0 8.07034 14.72" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs />
+                        <path id="Vector"
+                            d="M7.54147 8.28L7.95999 5.61603L5.34335 5.61603L5.34335 3.8873C5.34335 3.15848 5.70886 2.44806 6.88077 2.44806L8.07034 2.44806L8.07034 0.179962C8.07034 0.179962 6.99084 0 5.95874 0C3.80386 0 2.39532 1.27594 2.39532 3.58569L2.39532 5.61603L0 5.61603L0 8.28L2.39532 8.28L2.39532 14.72L5.34335 14.72L5.34335 8.28L7.54147 8.28Z"
+                            fill="#b2b2b2" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </div>
+                <div class="footer-icons-icon">
+                    <svg class="icon" width="14.907471" height="14.879974" viewBox="0 0 14.9075 14.88" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs />
+                        <path id="Vector"
+                            d="M7.45532 3.62494C5.34021 3.62494 3.63416 5.32828 3.63416 7.44C3.63416 9.5517 5.34021 11.255 7.45532 11.255C9.57056 11.255 11.2766 9.5517 11.2766 7.44C11.2766 5.32828 9.57056 3.62494 7.45532 3.62494ZM7.45532 9.92026C6.0885 9.92026 4.97107 8.80795 4.97107 7.44C4.97107 6.07202 6.08521 4.95972 7.45532 4.95972C8.82556 4.95972 9.9397 6.07202 9.9397 7.44C9.9397 8.80795 8.82227 9.92026 7.45532 9.92026ZM12.3242 3.4689C12.3242 3.96362 11.925 4.35873 11.4329 4.35873C10.9374 4.35873 10.5416 3.9603 10.5416 3.4689C10.5416 2.97748 10.9407 2.57904 11.4329 2.57904C11.925 2.57904 12.3242 2.97748 12.3242 3.4689ZM14.855 4.37201C14.7985 3.18002 14.5258 2.12418 13.6511 1.25424C12.7798 0.384338 11.7223 0.112061 10.5283 0.0523071C9.29785 -0.0174255 5.60962 -0.0174255 4.37915 0.0523071C3.18848 0.108734 2.13098 0.381012 1.25623 1.25092C0.381592 2.12085 0.112183 3.1767 0.0523682 4.36871C-0.0174561 5.59723 -0.0174561 9.27945 0.0523682 10.508C0.108887 11.7 0.381592 12.7558 1.25623 13.6257C2.13098 14.4957 3.18518 14.7679 4.37915 14.8277C5.60962 14.8974 9.29785 14.8974 10.5283 14.8277C11.7223 14.7712 12.7798 14.499 13.6511 13.6257C14.5225 12.7558 14.7952 11.7 14.855 10.508C14.9249 9.27945 14.9249 5.60052 14.855 4.37201ZM13.2654 11.8261C13.006 12.4769 12.5038 12.9783 11.8486 13.2406C10.8676 13.6291 8.53955 13.5394 7.45532 13.5394C6.37122 13.5394 4.03992 13.6257 3.06213 13.2406C2.41028 12.9816 1.90808 12.4802 1.64539 11.8261C1.25623 10.8466 1.34607 8.5224 1.34607 7.44C1.34607 6.35757 1.25964 4.03003 1.64539 3.05386C1.90479 2.40308 2.40698 1.9017 3.06213 1.6394C4.04321 1.25092 6.37122 1.34058 7.45532 1.34058C8.53955 1.34058 10.8708 1.25424 11.8486 1.6394C12.5005 1.89838 13.0027 2.39975 13.2654 3.05386C13.6544 4.03336 13.5647 6.35757 13.5647 7.44C13.5647 8.5224 13.6544 10.8499 13.2654 11.8261Z"
+                            fill="#b2b2b2" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </div>
+                <div class="footer-icons-icon">
+                    <svg width="11.919312" height="15.597107" viewBox="0 0 11.9193 15.5971" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs />
+                        <path id="Vector"
+                            d="M6.33209 0C3.14746 0 0 2.13751 0 5.59686C0 7.79688 1.22919 9.04688 1.97412 9.04688C2.28143 9.04688 2.45837 8.18439 2.45837 7.94061C2.45837 7.64999 1.72272 7.03125 1.72272 5.82187C1.72272 3.30939 3.62231 1.52814 6.08069 1.52814C8.19452 1.52814 9.75891 2.73749 9.75891 4.95938C9.75891 6.61874 9.09778 9.73126 6.95599 9.73126C6.18311 9.73126 5.52197 9.16876 5.52197 8.36249C5.52197 7.18124 6.34143 6.03751 6.34143 4.81876C6.34143 2.75 3.42682 3.125 3.42682 5.625C3.42682 6.14999 3.492 6.73126 3.72479 7.20938C3.29645 9.06561 2.42108 11.8312 2.42108 13.7437C2.42108 14.3344 2.50488 14.9156 2.56079 15.5063C2.66632 15.625 2.61353 15.6125 2.77496 15.5531C4.33936 13.3969 4.28351 12.975 4.99121 10.1531C5.37299 10.8844 6.36005 11.2781 7.14227 11.2781C10.4387 11.2781 11.9193 8.04376 11.9193 5.12811C11.9193 2.02499 9.25604 0 6.33209 0Z"
+                            fill="#b2b2b2" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </div>
+                <div class="footer-icons-icon">
+                    <svg width="15.892334" height="12.994904" viewBox="0 0 15.8923 12.9949" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs />
+                        <path id="Vector"
+                            d="M14.2587 3.23856C14.2689 3.38068 14.2689 3.52286 14.2689 3.66498C14.2689 7.99997 10.9916 12.9949 5.00165 12.9949C3.15631 12.9949 1.44202 12.4568 0 11.5229C0.262207 11.5533 0.514282 11.5634 0.78656 11.5634C2.3092 11.5634 3.71088 11.0457 4.8302 10.1624C3.39832 10.132 2.1983 9.18781 1.78485 7.88831C1.98657 7.91876 2.18823 7.93906 2.40002 7.93906C2.69244 7.93906 2.98486 7.89844 3.25714 7.82739C1.76471 7.52283 0.645325 6.20303 0.645325 4.60913L0.645325 4.56854C1.07892 4.81219 1.58319 4.96448 2.11761 4.98474C1.2403 4.3959 0.665527 3.39084 0.665527 2.25378C0.665527 1.64465 0.826843 1.08627 1.10919 0.598969C2.71259 2.58881 5.12268 3.88828 7.82513 4.03043C7.77472 3.78677 7.74445 3.53299 7.74445 3.27917C7.74445 1.47208 9.19653 0 11.0016 0C11.9394 0 12.7864 0.395935 13.3814 1.03552C14.1175 0.893402 14.8234 0.619293 15.4486 0.243652C15.2066 1.0051 14.6923 1.64468 14.0167 2.05075C14.6722 1.97971 15.3074 1.79694 15.8923 1.54315C15.4487 2.19287 14.894 2.77155 14.2587 3.23856Z"
+                            fill="#b2b2b2" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </div>
+                <div class="footer-icons-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" height="16">
+                        <path
+                            d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"
+                            fill="#b2b2b2" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </div>
+            </nav>
+        </section>
+    </footer>
 </body>
 
 </html>

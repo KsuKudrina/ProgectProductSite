@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <header class="header center">
         <div class="header-left">
             <div class="header-left__logo">
@@ -129,8 +128,7 @@
                         <div class="link-check">
                             <a href="checkout.html"
                                 class="button link-check__button button_bg-none button_hoverbdr">Checkout</a>
-                            <a href="shopping_cart.html"
-                                class="button link-check__button button_bg-none button_hoverbdr">Go
+                            <a href="checkout.html" class="button link-check__button button_bg-none button_hoverbdr">Go
                                 to cart</a>
                         </div>
 
@@ -328,110 +326,161 @@
             </ul>
         </nav>
     </div>
-
-    <nav class="registration center">
-        <details class="regcontainer" open>
-            <summary class="regcontainer-name">01. SHIPPING ADRESS</summary>
-            <div class="regcontainer-box">
-                <div class="regcontainer-block">
-                    <div class="regcontainer-heading">
-                        <p class="regcontainer-title">Check as a guest or register</p>
-                        <p class="regcontainer-subtitle">Register with us for future convenience</p>
-                    </div>
-                    <div>
-                        <input class="regcontainer-radiobox" type="radio" id="guest" name="drone" value="guest"
-                            checked />
-                        <label class="regcontainer-title" for="guest">checkout as guest</label>
-                    </div>
-                    <div>
-                        <input class="regcontainer-radiobox" type="radio" id="register" name="drone" value="register" />
-                        <label class="regcontainer-title" for="register">register</label>
-                    </div>
-                    <div class="regcontainer-heading">
-                        <p class="regcontainer-title">register and save time!</p>
-                        <p class="regcontainer-subtitle">Register with us for future convenience</p>
-                    </div>
-                    <div class="positive">
-                        <p class="regcontainer-subtitle">» Fast and easy checkout</p>
-                        <p class="regcontainer-subtitle">» Easy access to your order history and status</p>
-                    </div>
-                    <div class="but">
-                        <input class="button but__button button_bg-none button_hoverbdr" type="submit"
-                            value="Continue" />
-                    </div>
+    <div class="shopping center">
+        <form class="shopping-product">
+            <div class="shopping-item">
+                <p class="shopping-head">Product Details</p>
+                <div class="shopping-grid">
+                    <p class="shopping-head">unite Price</p>
                 </div>
-                <div class="regcontainer-block">
-                    <div class="regcontainer-heading">
-                        <p class="regcontainer-title">Already registed?</p>
-                        <p class="regcontainer-subtitle">Please log in below</p>
-                    </div>
-                    <form action="" class="regcontainer-forma">
-                        <div class="regcontainer-data">
-                            <label class="regcontainer-label" for="email">EMAIL ADDRESS <span
-                                    class="regcontainer-required">*</span></label>
-                            <input class="regcontainer-input" type="email" id="email" name="email" required />
-                        </div>
-
-                        <div class="regcontainer-data">
-                            <label class="regcontainer-label" for="pass">PASSWORD <span
-                                    class="regcontainer-required">*</span></label>
-                            <input class="regcontainer-input" type="password" id="pass" name="password" minlength="8"
-                                required />
-                        </div>
-                        <span class="regcontainer-required">
-                            * Required Fileds
-                        </span>
-                        <div class="but">
-                            <input class="button but__button button_bg-none button_hoverbdr" type="submit"
-                                value="Log in" />
-                            <a href="#" class="but-forgot">Forgot Password ?</a>
-                        </div>
-                    </form>
+                <div class="shopping-grid">
+                    <p class="shopping-head">Quantity</p>
+                </div>
+                <div class="shopping-grid">
+                    <p class="shopping-head">shipping</p>
+                </div>
+                <div class="shopping-grid">
+                    <p class="shopping-head">Subtotal</p>
+                </div>
+                <div class="shopping-grid">
+                    <p class="shopping-head">ACTION</p>
                 </div>
             </div>
-        </details>
-        <details class="regcontainer">
-            <summary class="regcontainer-name">02. BILLING INFORMATION</summary>
-            <div class="regcontainer-box">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo delectus ratione saepe ut amet ipsam
-                nemo eius magnam expedita dolores fuga necessitatibus, odio quo assumenda cupiditate optio eos excepturi
-                magni.
+            <div class="shopping-item">
+                <a href="product.html" class="shopping-pos">
+                    <img src="img/basket/men1.png" alt="product men">
+                    <div class="shopping-content">
+                        <p class="shopping-headline">Mango People T-shirt</p>
+                        <div class="">
+                            <p class="shopping-details">Color: <span class="shopping-details-det">Red</span></p>
+                            <p class="shopping-details">Size: <span class="shopping-details-det">Xll</span></p>
+                        </div>
+                    </div>
+                </a>
+                <div class="shopping-grid">
+                    <p class="shopping-text">$150</p>
+                </div>
+                <div class="shopping-grid">
+                    <input class="shopping-input" type="number" min="1" required>
+                </div>
+                <div class="shopping-grid">
+                    <p class="shopping-text">FREE</p>
+                </div>
+                <div class="shopping-grid">
+                    <p class="shopping-text">$300</p>
+                </div>
+                <div class="shopping-grid">
+                    <p class="shopping-text"><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a></p>
+                </div>
             </div>
-        </details>
-        <details class="regcontainer">
-            <summary class="regcontainer-name">03. SHIPPING INFORMATION</summary>
-            <div class="regcontainer-box">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo delectus ratione saepe ut amet ipsam
-                nemo eius magnam expedita dolores fuga necessitatibus, odio quo assumenda cupiditate optio eos excepturi
-                magni.
+            <div class="shopping-item">
+                <a href="product.html" class="shopping-pos">
+                    <img src="img/basket/men2.png" alt="product men">
+                    <div class="shopping-content">
+                        <p class="shopping-headline">Mango People T-shirt</p>
+                        <div class="">
+                            <p class="shopping-details">Color: <span class="shopping-details-det">Red</span></p>
+                            <p class="shopping-details">Size: <span class="shopping-details-det">Xll</span></p>
+                        </div>
+                    </div>
+                </a>
+                <div class="shopping-grid">
+                    <p class="shopping-text">$150</p>
+                </div>
+                <div class="shopping-grid">
+                    <input class="shopping-input" type="number" min="1" required>
+                </div>
+                <div class="shopping-grid">
+                    <p class="shopping-text">FREE</p>
+                </div>
+                <div class="shopping-grid">
+                    <p class="shopping-text">$300</p>
+                </div>
+                <div class="shopping-grid">
+                    <p class="shopping-text"><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a></p>
+                </div>
             </div>
-        </details>
-        <details class="regcontainer">
-            <summary class="regcontainer-name">04. SHIPPING METHOD</summary>
-            <div class="regcontainer-box">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo delectus ratione saepe ut amet ipsam
-                nemo eius magnam expedita dolores fuga necessitatibus, odio quo assumenda cupiditate optio eos excepturi
-                magni.
+            <div class="shopping-item">
+                <a href="product.html" class="shopping-pos">
+                    <img src="img/basket/men3.png" alt="product men">
+                    <div class="shopping-content">
+                        <p class="shopping-headline">Mango People T-shirt</p>
+                        <div class="">
+                            <p class="shopping-details">Color: <span class="shopping-details-det">Red</span></p>
+                            <p class="shopping-details">Size: <span class="shopping-details-det">Xll</span></p>
+                        </div>
+                    </div>
+                </a>
+                <div class="shopping-grid">
+                    <p class="shopping-text">$150</p>
+                </div>
+                <div class="shopping-grid">
+                    <input class="shopping-input" type="number" min="1" required>
+                </div>
+                <div class="shopping-grid">
+                    <p class="shopping-text">FREE</p>
+                </div>
+                <div class="shopping-grid">
+                    <p class="shopping-text">$300</p>
+                </div>
+                <div class="shopping-grid">
+                    <p class="shopping-text"><a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a></p>
+                </div>
             </div>
-        </details>
-        <details class="regcontainer">
-            <summary class="regcontainer-name">05. PAYMENT METHOD</summary>
-            <div class="regcontainer-box">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo delectus ratione saepe ut amet ipsam
-                nemo eius magnam expedita dolores fuga necessitatibus, odio quo assumenda cupiditate optio eos excepturi
-                magni.
-            </div>
-        </details>
-        <details class="regcontainer">
-            <summary class="regcontainer-name">06. ORDER REVIEW</summary>
-            <div class="regcontainer-box">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo delectus ratione saepe ut amet ipsam
-                nemo eius magnam expedita dolores fuga necessitatibus, odio quo assumenda cupiditate optio eos excepturi
-                magni.
-            </div>
-        </details>
-    </nav>
+            <div class="shoppbut">
+                <input class="button shoppbut__button button_bg-none button_hoverbdr" type="submit"
+                    value="cLEAR SHOPPING CART" />
 
+                <input class="button shoppbut__button button_bg-none button_hoverbdr" type="submit"
+                    value="cONTINUE sHOPPING" />
+            </div>
+        </form>
+        <div class="shopping-checkout">
+            <form class="shopping-block">
+                <div class="shopping-caption">
+                    <p class="shopping-title">Shipping Adress</p>
+                </div>
+                <select name="" class="shopping-sity">
+                    <option value="bangladesh">Bangladesh</option>
+                    <option value="russia">Russia</option>
+                    <option value="usa">USA</option>
+                </select>
+                <div class="shopping-data">
+                    <input class="shopping-in" type="text" placeholder="State" />
+                </div>
+                <div class="shopping-data">
+                    <input class="shopping-in" type="number" id="postcode" name="postcode" min="111000" required />
+                </div>
+                <div class="shoppbut">
+                    <input class="button shoppbut__button button_bg-none button_hoverbdr" type="submit"
+                        value="get a quote" />
+                </div>
+            </form>
+            <form class="shopping-block">
+                <div class="shopping-caption">
+                    <p class="shopping-title">coupon discount</p>
+                    <p class="shopping-title-tagline">Enter your coupon code if you have one</p>
+                </div>
+                <div class="shopping-data">
+                    <input class="shopping-in" type="text" placeholder="State" />
+                </div>
+                <div class="shoppbut">
+                    <input class="button shoppbut__button button_bg-none button_hoverbdr" type="submit"
+                        value="Apply coupon" />
+                </div>
+            </form>
+            <form class="shopping-block-right">
+                <div class="shopping-caption-right">
+                    <p class="shopping-subtitle">Sub total <span>$900</span></p>
+                    <p class="shopping-title">GRAND TOTAL <span class="shopping-title-color">$900</span></p>
+                </div>
+                <div class="shoppbutt">
+                    <input class="button shoppbutt__button button_bd-color button_bg-none button_hover" type="submit"
+                        value="proceed to checkout" />
+                </div>
+            </form>
+        </div>
+    </div>
     <footer class="footer">
         <section class="subscribe center">
             <div class="subscribe-cont">
@@ -457,7 +506,6 @@
                     <form class="subscribe-right-forma">
                         <input class="subscribe-right-inputEmail" type="email" id="forma"
                             placeholder="Enter Your Email">
-                        <!-- <button class="subscribe-button" type="submit">Subscribe</button> -->
                         <div class="subscribe-but">
                             <input type="submit" class="button subscribe-but__button button_hover" value="Subscribe">
                         </div>
@@ -588,7 +636,6 @@
             </nav>
         </section>
     </footer>
-
 </body>
 
 </html>
