@@ -1367,6 +1367,11 @@ body {
             font-weight: 400;
             color: #bcbcbc;
         }
+
+        &:hover {
+            border: 1px solid $colorSite;
+            color: $colorSite;
+        }
     }
 
     &-but {
