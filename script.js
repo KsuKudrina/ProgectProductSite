@@ -13,7 +13,7 @@ newData.forEach(element => {
             </a>
             <div class="butcard">
                 <div class="butcard__addCard">
-                <a class="button butcard__button" href="#">
+                <a class="button butcard__button" href="#" id="${element.id}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -34,4 +34,36 @@ newData.forEach(element => {
         </div>
         `
     )
+});
+
+const Add = document.querySelector('.butcard__button'),
+      basketEl = document.querySelector('.basket-product');
+
+Add.addEventListener('click', () =>{
+  newData.forEach(element => {
+    
+    basketEl.insertAdjacentHTML('beforeend', 
+      `
+      <div class="basket-item">
+                  <a href="product.html" class="basket-pos">
+                    <img class="basket-img" src="${element.img}" alt="product men" />
+                    <div class="basket-content">
+                      <p class="basket-headline">${element.title}</p>
+                      <div class="basket-star">
+                        <i class="fa fa-star f123"></i>
+                        <i class="fa fa-star f123"></i>
+                        <i class="fa fa-star f123"></i>
+                        <i class="fa fa-star f123"></i>
+                        <i class="fa fa-star-half-o"></i>
+                      </div>
+                      <p class="basket-cost">1 x ${element.price}</p>
+                    </div>
+                  </a>
+                  <a href="#"
+                    ><i class="fa fa-times-circle" aria-hidden="true"></i
+                  ></a>
+                </div>
+      `
+    )
+  }) 
 });
